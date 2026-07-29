@@ -20,125 +20,57 @@
   <main id="content">
     <article class="edition-page">
       <header class="edition-hero">
-        <p class="issue-label">每日 AI 情报 · 2026-07-29</p>
-        <h1>AI Newspaper</h1>
-        <blockquote>本期版面呈现出两个清晰主线：一是 GitHub Copilot 与企业集成能力继续加强，重点落在模型接入、使用度量、权限治理和可观测性；二是研究侧围绕 agent、memory、multimodal reasoning、具身控制与高效训练/推理持续密集迭代。整体看，应用层信号偏稳定向上，但更多是产品工程与系统整合的累积，而非单一突破性平台事件。</blockquote>
-        <dl class="edition-meta"><div class="meta-item"><dt>覆盖窗口</dt><dd>36 hours (2026-07-28 02:33 to 2026-07-29 14:33 Asia/Shanghai)</dd></div><div class="meta-item"><dt>发布时间</dt><dd>2026-07-29 14:34 (Asia/Shanghai)</dd></div><div class="meta-item"><dt>阅读时间</dt><dd>7 min</dd></div><div class="meta-item"><dt>市场温度</dt><dd>Accelerating</dd></div><div class="meta-item"><dt>覆盖信心</dt><dd>medium</dd></div></dl>
-        <p class="source-health">来源健康：10 / 10，失败 0</p>
+        <div>
+          <p class="issue-label">2026-07-29</p>
+          <h1>早间 AI 情报</h1>
+          <p class="field-label">核心判断</p>
+          <blockquote>这期不是‘更大模型’驱动，而是‘更可控、更可测、更能嵌入流程’驱动。</blockquote>
+        </div>
+        <p class="edition-meta"><span>发布时间</span><strong>14:34</strong></p>
       </header>
       
-    <section class="section landscape" aria-labelledby="landscape-title">
-      <h2 id="landscape-title">Today’s AI Landscape <span>今日 AI 生态</span></h2>
-      <dl><div class="landscape-item"><dt>Dominant theme（主导主题）</dt><dd>AI 正从模型能力竞争转向 agent 系统工程、企业治理与效率优化竞争。</dd></div><div class="landscape-item"><dt>AI Models</dt><dd>模型层面以效率、对齐、推理和结构化能力改进为主：包括 reasoning/structured reasoning、latent recurrence、MoE 路由、instruction-tuned syntax reuse、flow/diffusion 加速生成，以及多模态和时序建模。未见明显的前沿大模型发布事件，更多是提升可用性、成本和特定任务表现的研究进展。</dd></div><div class="landscape-item"><dt>AI Agents</dt><dd>agent 相关条目数量最多，覆盖 desktop GUI、market surveillance、network assurance、veterinary screening、memory routing、Copilot agent flows、computer-use benchmark、self-driving networks 等。共同方向是 agent 不再只追求会做事，而是强调状态管理、失败恢复、上下文验证、工具信任和跨系统编排。</dd></div><div class="landscape-item"><dt>Enterprise AI</dt><dd>企业侧最强信号来自 GitHub Copilot 的企业治理与集成增强，以及 AgentCore、Kubernetes、安全修补、网络自治、科学计算现代化等系统化落地主题。说明企业 AI 正从“接入模型”转向“管控模型、审计模型、把模型嵌入工作流”。</dd></div><div class="landscape-item"><dt>AI Tools &amp; Open Source</dt><dd>工具与开源生态集中在 Copilot、LangGraph、AgentCore、Strands、MCP、OpenTelemetry、memory 管理、benchmark 工具链与多模态/GUI 评测基础设施。趋势是 agent 开发框架和观测/权限/路由基础设施的重要性上升，工具层正在成为企业采用的核心门槛。</dd></div><div class="landscape-item"><dt>Research</dt><dd>研究版块高度活跃，主题集中在高效训练/蒸馏、强化学习与奖励设计、具身与机器人控制、跨模态推理、时序/图/知识一致性、记忆系统和鲁棒性评估。整体显示学术前沿正在为生产级 agent 与行业应用提供基础组件。</dd></div><div class="landscape-item"><dt>KANE interpretation（KANE 判断）</dt><dd>这期不是‘更大模型’驱动，而是‘更可控、更可测、更能嵌入流程’驱动。企业会优先采购能解释、能审计、能与现有系统兼容的 AI 能力；研究界则在补齐 memory、reliability、latency、verification 与 domain-specific reasoning 的短板。</dd></div></dl>
-    </section>
+    <aside class="landscape" aria-labelledby="landscape-title">
+      <h2 id="landscape-title">今日脉络</h2>
+      <p>AI 正从模型能力竞争转向 agent 系统工程、企业治理与效率优化竞争。</p>
+    </aside>
       
-    <section class="section" aria-labelledby="updates-title">
-      <h2 id="updates-title">重点 AI 更新 <span>5 条</span></h2>
+    <section class="section updates" id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">重要更新</h2>
       <div class="updates-grid">
         <article class="update">
-          <div class="update-index">01</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">Research Papers</span><span>Test</span></div>
+            <p class="story-label">Test / Research Papers</p>
             <h3><a href="https://arxiv.org/abs/2607.25995v1" rel="noopener noreferrer">Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?</a></h3>
-            <p class="source-line">arXiv AI Research · 2026-07-29 01:12 (Asia/Shanghai)</p>
-            <p>KuTIE 通过引入 live cluster context，包括 Istio call edges、Trivy findings 和 service-account bindings，来提升 LLM 生成 Kubernetes 安全补丁的正确性，特别是在拓扑依赖型问题上效果显著。</p>
-            <p class="why"><strong>为什么重要</strong>这表明修补 Kubernetes 风险时，单靠静态 finding 不够，必须把运行时依赖拓扑纳入上下文，否则容易产生破坏性补丁。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>9/10</dd></div>
-              <div><dt>重要性</dt><dd>48/100</dd></div>
-              <div><dt>KANE</dt><dd>82/100</dd></div>
-            </dl>
+            <p class="story-summary">KuTIE 通过引入 live cluster context，包括 Istio call edges、Trivy findings 和 service-account bindings，来提升 LLM 生成 Kubernetes 安全补丁的正确性，特别是在拓扑依赖型问题上效果显著。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
-          <div class="update-index">02</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">AI Tools</span><span>Watch</span></div>
+            <p class="story-label">Watch / AI Tools</p>
             <h3><a href="https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot" rel="noopener noreferrer">Grok 4.5 is now available in GitHub Copilot</a></h3>
-            <p class="source-line">GitHub Copilot Changelog · 2026-07-29 03:10 (Asia/Shanghai)</p>
-            <p>Grok 4.5 现在可在 GitHub Copilot 中使用，面向快速、agentic coding 和复杂多步工作流，并带有较长上下文窗口。</p>
-            <p class="why"><strong>为什么重要</strong>这说明 GitHub Copilot 正继续扩大可选模型池，把不同模型的编码与 agent 能力纳入同一产品入口，增强了开发者在性能、延迟和推理风格上的选择空间。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>10/10</dd></div>
-              <div><dt>重要性</dt><dd>47/100</dd></div>
-              <div><dt>KANE</dt><dd>79/100</dd></div>
-            </dl>
+            <p class="story-summary">Grok 4.5 现在可在 GitHub Copilot 中使用，面向快速、agentic coding 和复杂多步工作流，并带有较长上下文窗口。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article>
         <article class="update">
-          <div class="update-index">03</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">AI Models</span><span>Watch</span></div>
+            <p class="story-label">Watch / AI Models</p>
             <h3><a href="https://openai.com/index/scientific-computing-agentic-ai" rel="noopener noreferrer">Scientific computing in the age of agentic AI</a></h3>
-            <p class="source-line">OpenAI News · 2026-07-29 01:00 (Asia/Shanghai)</p>
-            <p>该条以 field report 形式描述科学家如何使用 AI coding agents 现代化 scientific computing，并加速 genomics 等领域的软件开发与发现。</p>
-            <p class="why"><strong>为什么重要</strong>这类报告说明 agent 已不仅用于通用编程，而是在科研软件与计算科学中开始承担现实生产力角色。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>10/10</dd></div>
-              <div><dt>重要性</dt><dd>47/100</dd></div>
-              <div><dt>KANE</dt><dd>76/100</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-index">04</div>
-          <div class="update-content">
-            <div class="tag-row"><span class="tag">AI Tools</span><span>Test</span></div>
-            <h3><a href="https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy" rel="noopener noreferrer">Manage GitHub Copilot app access with a dedicated policy</a></h3>
-            <p class="source-line">GitHub Copilot Changelog · 2026-07-28 04:43 (Asia/Shanghai)</p>
-            <p>GitHub Copilot app 现在拥有独立 policy，企业和组织层级可以单独控制访问权限。</p>
-            <p class="why"><strong>为什么重要</strong>这类细粒度权限控制是大规模企业推广 AI 工具的关键前提，直接关系到治理、合规与内控。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>10/10</dd></div>
-              <div><dt>重要性</dt><dd>47/100</dd></div>
-              <div><dt>KANE</dt><dd>78/100</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-index">05</div>
-          <div class="update-content">
-            <div class="tag-row"><span class="tag">Enterprise AI</span><span>Watch</span></div>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/" rel="noopener noreferrer">How AgentCore Gateway supports the MCP 2026-07-28 spec</a></h3>
-            <p class="source-line">AWS Machine Learning Blog · 2026-07-29 03:07 (Asia/Shanghai)</p>
-            <p>AgentCore Gateway 已支持新的 MCP 2026-07-28 规范，该规范对 MCP 做了较大修订，包括无状态化、受治理扩展机制和更强的授权，并可通过一次 UpdateGateway 调用启用。</p>
-            <p class="why"><strong>为什么重要</strong>MCP 作为 agent 工具协议的标准化基础，其规范升级会影响企业如何暴露工具、管理会话和授权。对云厂商来说，快速支持新规范有助于降低 agent 集成摩擦。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>9/10</dd></div>
-              <div><dt>重要性</dt><dd>47/100</dd></div>
-              <div><dt>KANE</dt><dd>80/100</dd></div>
-            </dl>
+            <p class="story-summary">该条以 field report 形式描述科学家如何使用 AI coding agents 现代化 scientific computing，并加速 genomics 等领域的软件开发与发现。</p>
+            <p class="source-line">OpenAI News</p>
           </div>
         </article></div>
     </section>
       
-    <section class="section tools" aria-labelledby="tools-title">
-      <h2 id="tools-title">AI Tools Radar <span>工具雷达</span></h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>工具或项目</th><th>核心变化</th><th>信号</th></tr></thead>
-          <tbody><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot" rel="noopener noreferrer">Grok 4.5 is now available in GitHub Copilot</a></th><td>Grok 4.5 现在可在 GitHub Copilot 中使用，面向快速、agentic coding 和复杂多步工作流，并带有较长上下文窗口。</td><td><span class="signal">Watch</span></td></tr><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy" rel="noopener noreferrer">Manage GitHub Copilot app access with a dedicated policy</a></th><td>GitHub Copilot app 现在拥有独立 policy，企业和组织层级可以单独控制访问权限。</td><td><span class="signal">Test</span></td></tr><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-27-github-copilot-for-jetbrains-adds-improvved-opentelemetry-configuration-and-model-management" rel="noopener noreferrer">GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management</a></th><td>GitHub Copilot for JetBrains 增加了更好的 OpenTelemetry 配置和 model management</td><td><span class="signal">Watch</span></td></tr><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-28-github-copilot-app-usage-metrics-now-expand-across-report-rollups" rel="noopener noreferrer">GitHub Copilot app usage metrics now expand across report rollups</a></th><td>GitHub Copilot app 的使用指标现在被扩展到更多 usage metrics API 汇总范围中</td><td><span class="signal">Watch</span></td></tr></tbody>
-        </table>
-      </div>
-    </section>
-      <div class="feature-pair">
-    <section class="section enterprise">
-      <h2>Enterprise AI Impact <span>企业 AI 影响</span></h2>
-      <div class="highlight-list"><article><h3><a href="https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/" rel="noopener noreferrer">How AgentCore Gateway supports the MCP 2026-07-28 spec</a></h3><p class="source-line">AWS Machine Learning Blog | Watch | KANE relevance 80/100</p></article><article><h3><a href="https://aws.amazon.com/blogs/machine-learning/market-surveillance-agent-with-langgraph-and-strands-on-agentcore/" rel="noopener noreferrer">Market surveillance agent with LangGraph and Strands on AgentCore</a></h3><p class="source-line">AWS Machine Learning Blog | Watch | KANE relevance 78/100</p><p>它反映企业 agent 部署正在从概念演示转向带恢复、记忆和可观测性的生产架构，这些能力是大规模落地的前提。</p></article></div>
-    </section>
-    <section class="section research">
-      <h2>Research Spotlight <span>研究观察</span></h2>
-      <div class="highlight-list"><article><h3><a href="https://arxiv.org/abs/2607.25995v1" rel="noopener noreferrer">Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?</a></h3><p class="source-line">arXiv AI Research | Test | KANE relevance 82/100</p></article><article><h3><a href="https://arxiv.org/abs/2607.25970v1" rel="noopener noreferrer">Reinforcement Learning for Code Optimization</a></h3><p class="source-line">arXiv AI Research | Test | KANE relevance 81/100</p><p>关注该方法在不同语言、不同平台和更真实 benchmark 上的可迁移性。</p></article><article><h3><a href="https://arxiv.org/abs/2607.26041v1" rel="noopener noreferrer">Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</a></h3><p class="source-line">arXiv AI Research | Test | KANE relevance 78/100</p><p>关注是否出现针对 desktop transition understanding 的专门训练方法，以及 benchmark 是否被更广泛采用。</p></article></div>
-    </section></div>
-      
     <section class="section actions" aria-labelledby="actions-title">
-      <h2 id="actions-title">My Recommended Actions <span>我的行动建议</span></h2>
-      <ol><li><span class="action-signal">Test</span><div><h3><a href="https://arxiv.org/abs/2607.25995v1" rel="noopener noreferrer">Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?</a></h3><p>在隔离环境测试。验证重点：这类 topology-aware patching 是否进入安全产品和云运维工作流（KANE relevance: 82/100）。</p></div></li><li><span class="action-signal">Watch</span><div><h3><a href="https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot" rel="noopener noreferrer">Grok 4.5 is now available in GitHub Copilot</a></h3><p>继续观察，暂不采用。关注点：Grok 4.5 在真实编码任务中的稳定性、成本表现，以及是否推动更多第三方模型持续进入 Copilot（KANE relevance: 79/100）。</p></div></li><li><span class="action-signal">Watch</span><div><h3><a href="https://openai.com/index/scientific-computing-agentic-ai" rel="noopener noreferrer">Scientific computing in the age of agentic AI</a></h3><p>继续观察，暂不采用。关注点：科学计算团队是否将 coding agents 作为标准工作流，以及其对科研产出的量化影响（KANE relevance: 76/100）。</p></div></li></ol>
+      <h2 id="actions-title">行动建议</h2>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这类 topology-aware patching 是否进入安全产品和云运维工作流。</p></article><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：Grok 4.5 在真实编码任务中的稳定性、成本表现，以及是否推动更多第三方模型持续进入 Copilot。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
     <p>KANE AI Newspaper</p>
-    <p>每日 AI 模型、Agent、企业应用、工具、开源与研究情报。</p>
+    <p>只保留影响判断与行动的信息。</p>
   </footer>
 </body>
 </html>

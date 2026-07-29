@@ -20,72 +20,49 @@
   <main id="content">
     <article class="edition-page">
       <header class="edition-hero">
-        <p class="issue-label">每日 AI 情报 · 2026-07-27</p>
-        <h1>AI Newspaper</h1>
-        <blockquote>这是一次以性能与兼容性为主的工程迭代，显示出基础推理栈仍在围绕吞吐、延迟和跨硬件适配持续打磨。</blockquote>
-        <dl class="edition-meta"><div class="meta-item"><dt>覆盖窗口</dt><dd>unavailable</dd></div><div class="meta-item"><dt>发布时间</dt><dd>2026-07-27 17:59 (Asia/Shanghai)</dd></div><div class="meta-item"><dt>阅读时间</dt><dd>3 min</dd></div><div class="meta-item"><dt>市场温度</dt><dd>Low coverage</dd></div><div class="meta-item"><dt>覆盖信心</dt><dd>low</dd></div></dl>
-        <p class="source-health">来源健康：unavailable</p>
+        <div>
+          <p class="issue-label">2026-07-27</p>
+          <h1>早间 AI 情报</h1>
+          <p class="field-label">核心判断</p>
+          <blockquote>两条证据都指向同一类信号：推理服务栈正在把边际性能和硬件兼容性当作主要竞争点。</blockquote>
+        </div>
+        <p class="edition-meta"><span>发布时间</span><strong>17:59</strong></p>
       </header>
       
-    <section class="section landscape" aria-labelledby="landscape-title">
-      <h2 id="landscape-title">Today’s AI Landscape <span>今日 AI 生态</span></h2>
-      <dl><div class="landscape-item"><dt>Dominant theme（主导主题）</dt><dd>Inference serving 的底层能力升级。</dd></div><div class="landscape-item"><dt>AI Models</dt><dd>本期没有足够的直接证据判断该领域的变化。</dd></div><div class="landscape-item"><dt>AI Agents</dt><dd>本期没有足够的直接证据判断该领域的变化。</dd></div><div class="landscape-item"><dt>Enterprise AI</dt><dd>本期没有足够的直接证据判断该领域的变化。</dd></div><div class="landscape-item"><dt>AI Tools &amp; Open Source</dt><dd>vLLM 与其相关工具链的版本更新覆盖更多后端、缓存与量化路径，说明开源推理基础设施在扩展可用性而非引入新范式。</dd></div><div class="landscape-item"><dt>Research</dt><dd>本期没有足够的直接证据判断该领域的变化。</dd></div><div class="landscape-item"><dt>KANE interpretation（KANE 判断）</dt><dd>两条证据都指向同一类信号：推理服务栈正在把边际性能和硬件兼容性当作主要竞争点。当前更像是成熟基础设施的连续修补与扩展，而不是足以单独定义市场方向的结构性跃迁。</dd></div></dl>
-    </section>
+    <aside class="landscape" aria-labelledby="landscape-title">
+      <h2 id="landscape-title">今日脉络</h2>
+      <p>Inference serving 的底层能力升级。</p>
+    </aside>
       
-    <section class="section" aria-labelledby="updates-title">
-      <h2 id="updates-title">重点 AI 更新 <span>2 条</span></h2>
+    <section class="section updates" id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">重要更新</h2>
       <div class="updates-grid">
         <article class="update">
-          <div class="update-index">01</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">Open Source AI</span><span>Watch</span></div>
+            <p class="story-label">Watch / Open Source AI</p>
             <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.26.0" rel="noopener noreferrer">vLLM v0.26.0</a></h3>
-            <p class="source-line">vLLM Releases · 2026-07-27 09:06 (Asia/Shanghai)</p>
-            <p>vLLM v0.26.0 增加了 Inkling 模型族支持、DeepSeek-V4 的跨硬件性能优化，以及 KV offloading、tiered storage 和多模态前端等一系列更新。</p>
-            <p class="why"><strong>为什么重要</strong>这表明推理基础设施继续在模型兼容、性能和内存层级管理上快速补强。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>9/10</dd></div>
-              <div><dt>重要性</dt><dd>44/100</dd></div>
-              <div><dt>KANE</dt><dd>78/100</dd></div>
-            </dl>
+            <p class="story-summary">vLLM v0.26.0 增加了 Inkling 模型族支持、DeepSeek-V4 的跨硬件性能优化，以及 KV offloading、tiered storage 和多模态前端等一系列更新。</p>
+            <p class="source-line">vLLM Releases</p>
           </div>
         </article>
         <article class="update">
-          <div class="update-index">02</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">AI Tools</span><span>Watch</span></div>
+            <p class="story-label">Watch / AI Tools</p>
             <h3><a href="https://github.com/ollama/ollama/releases/tag/v0.32.4" rel="noopener noreferrer">Ollama v0.32.4</a></h3>
-            <p class="source-line">Ollama Releases · 2026-07-26 02:26 (Asia/Shanghai)</p>
-            <p>v0.32.4 为 Apple GPU 上的 Laguna 提供 MLX 支持，并修复 Qwen3 MoE 的解码问题，同时提升了 packed gate/up projection 的速度。</p>
-            <p class="why"><strong>为什么重要</strong>这类修复与加速会直接影响特定硬件上的可用性和推理效率。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>9/10</dd></div>
-              <div><dt>重要性</dt><dd>31/100</dd></div>
-              <div><dt>KANE</dt><dd>55/100</dd></div>
-            </dl>
+            <p class="story-summary">v0.32.4 为 Apple GPU 上的 Laguna 提供 MLX 支持，并修复 Qwen3 MoE 的解码问题，同时提升了 packed gate/up projection 的速度。</p>
+            <p class="source-line">Ollama Releases</p>
           </div>
         </article></div>
     </section>
       
-    <section class="section tools" aria-labelledby="tools-title">
-      <h2 id="tools-title">AI Tools Radar <span>工具雷达</span></h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>工具或项目</th><th>核心变化</th><th>信号</th></tr></thead>
-          <tbody><tr><th scope="row"><a href="https://github.com/ollama/ollama/releases/tag/v0.32.4" rel="noopener noreferrer">Ollama v0.32.4</a></th><td>v0.32.4 为 Apple GPU 上的 Laguna 提供 MLX 支持</td><td><span class="signal">Watch</span></td></tr></tbody>
-        </table>
-      </div>
-    </section>
-      
-      
     <section class="section actions" aria-labelledby="actions-title">
-      <h2 id="actions-title">My Recommended Actions <span>我的行动建议</span></h2>
-      <ol><li><span class="action-signal">Watch</span><div><h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.26.0" rel="noopener noreferrer">vLLM v0.26.0</a></h3><p>继续观察，暂不采用。关注点：这些优化是否在更多主流模型和硬件上稳定落地（KANE relevance: 78/100）。</p></div></li><li><span class="action-signal">Watch</span><div><h3><a href="https://github.com/ollama/ollama/releases/tag/v0.32.4" rel="noopener noreferrer">Ollama v0.32.4</a></h3><p>继续观察，暂不采用。关注点：Apple GPU 路径和 Qwen3 MoE 优化是否带来更广泛的使用反馈（KANE relevance: 55/100）。</p></div></li></ol>
+      <h2 id="actions-title">行动建议</h2>
+      <div class="action-list"><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：这些优化是否在更多主流模型和硬件上稳定落地。</p></article><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：Apple GPU 路径和 Qwen3 MoE 优化是否带来更广泛的使用反馈。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
     <p>KANE AI Newspaper</p>
-    <p>每日 AI 模型、Agent、企业应用、工具、开源与研究情报。</p>
+    <p>只保留影响判断与行动的信息。</p>
   </footer>
 </body>
 </html>

@@ -20,106 +20,57 @@
   <main id="content">
     <article class="edition-page">
       <header class="edition-hero">
-        <p class="issue-label">每日 AI 情报 · 2026-07-28</p>
-        <h1>AI Newspaper</h1>
-        <blockquote>本版面呈现明显的企业级 AI 运维与治理强化：GitHub Copilot 相关条目集中在权限、策略、遥测和云端 agent 管控，说明工具层正在从“功能可用”转向“可治理、可审计、可规模化部署”。同时，AWS 生态下的 Enterprise AI 继续强调检索增强之外的知识压缩、托管推理与行业落地，显示企业在追求更低延迟、更可控成本和更贴近业务流程的方案。整体信号偏向“平台治理 + 企业落地优化”，而非前沿模型突破。</blockquote>
-        <dl class="edition-meta"><div class="meta-item"><dt>覆盖窗口</dt><dd>36 hours (2026-07-27 03:17 to 2026-07-28 15:17 Asia/Shanghai)</dd></div><div class="meta-item"><dt>发布时间</dt><dd>2026-07-28 15:19 (Asia/Shanghai)</dd></div><div class="meta-item"><dt>阅读时间</dt><dd>8 min</dd></div><div class="meta-item"><dt>市场温度</dt><dd>Stable</dd></div><div class="meta-item"><dt>覆盖信心</dt><dd>medium</dd></div></dl>
-        <p class="source-health">来源健康：8 / 10，失败 2</p>
+        <div>
+          <p class="issue-label">2026-07-28</p>
+          <h1>早间 AI 情报</h1>
+          <p class="field-label">核心判断</p>
+          <blockquote>KANE 视角下，这是一个‘工具治理强于模型突破’的版面：短期最值得关注的是企业如何把 Copilot、agent、模型访问和遥测纳入统一治理框架，以及这些控制面是否成为采购和扩张的前置条件。</blockquote>
+        </div>
+        <p class="edition-meta"><span>发布时间</span><strong>15:19</strong></p>
       </header>
       
-    <section class="section landscape" aria-labelledby="landscape-title">
-      <h2 id="landscape-title">Today’s AI Landscape <span>今日 AI 生态</span></h2>
-      <dl><div class="landscape-item"><dt>Dominant theme（主导主题）</dt><dd>企业 AI 工具治理与落地优化</dd></div><div class="landscape-item"><dt>AI Models</dt><dd>本版面没有出现新的基础模型发布或显著能力跃迁；唯一明显的模型相关条目是 OpenAI 关于工作变化的研究，更多是需求侧和采用侧洞察。真正的模型应用信号来自 Amazon Nova、Deepgram speech models 等在 Bedrock/SageMaker 上的行业化部署，显示模型竞争焦点转向可用性、托管集成与业务适配。</dd></div><div class="landscape-item"><dt>AI Agents</dt><dd>agent 相关信号较集中但仍偏基础设施化：GitHub Copilot 引入 custom agents、Claude agent flows、Copilot cloud agent 的企业管理设置，说明 agent 正从实验功能走向受控生产环境；但本版面没有看到复杂多 agent 协作或自治任务的大规模案例。当前 agent 的核心痛点仍是权限边界、配置一致性、遥测和企业管控。</dd></div><div class="landscape-item"><dt>Enterprise AI</dt><dd>企业端最强信号来自 GitHub Copilot 与 AWS 相关实践：前者在企业/组织级访问控制、managed settings、cloud agent 治理方面持续加码，说明大型组织对生成式开发工具的合规、权限和统一配置需求正在上升；后者则展示了企业 AI 在知识处理、语音模型托管、医疗文档自动化中的具体采用路径。整体看，企业买单点不再只是模型能力，而是部署、控制、审计、集成与行业工作流嵌入。</dd></div><div class="landscape-item"><dt>AI Tools &amp; Open Source</dt><dd>工具层最强变化集中在 GitHub Copilot for JetBrains 的 OpenTelemetry 配置、模型管理、MCP servers 和自定义 agents 支持，以及 Copilot app 的独立策略和 enterprise managed settings。开源或可部署实现方面，TAKC 明确给出 open-source implementation，可作为企业知识压缩与分层检索的参考实现。整体工具生态的关键词是 observability、policy control、agent integration 和 workflow tuning。</dd></div><div class="landscape-item"><dt>Research</dt><dd>模型研究侧只有一条 OpenAI 的工作边界变化研究，重点不在模型架构或参数规模，而在 AI 对工作任务分配与岗位边界的影响，属于应用与行为层洞察。技术研究主线则落在企业知识处理与代理式工作流控制：TAKC 体现对长文档、多文档分析场景的压缩与分层检索思路；GitHub Copilot 的 OpenTelemetry、模型管理、MCP/自定义 agent 以及企业策略管理，反映开发者工具正在补齐可观测性与治理能力。</dd></div><div class="landscape-item"><dt>KANE interpretation（KANE 判断）</dt><dd>KANE 视角下，这是一个‘工具治理强于模型突破’的版面：短期最值得关注的是企业如何把 Copilot、agent、模型访问和遥测纳入统一治理框架，以及这些控制面是否成为采购和扩张的前置条件。对创新团队而言，TAKC 说明在复杂企业知识场景里，单纯 RAG 可能已不够，需要做任务定制的压缩与分层召回；对产品和平台团队而言，Copilot 的权限与可观测性更新提示可审计性正在成为生成式工具进入企业的必要门槛。</dd></div></dl>
-    </section>
+    <aside class="landscape" aria-labelledby="landscape-title">
+      <h2 id="landscape-title">今日脉络</h2>
+      <p>企业 AI 工具治理与落地优化</p>
+    </aside>
       
-    <section class="section" aria-labelledby="updates-title">
-      <h2 id="updates-title">重点 AI 更新 <span>4 条</span></h2>
+    <section class="section updates" id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">重要更新</h2>
       <div class="updates-grid">
         <article class="update">
-          <div class="update-index">01</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">AI Tools</span><span>Test</span></div>
+            <p class="story-label">Test / AI Tools</p>
             <h3><a href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app" rel="noopener noreferrer">Enterprise managed settings in the GitHub Copilot app and Copilot cloud agent</a></h3>
-            <p class="source-line">GitHub Copilot Changelog · 2026-07-28 01:00 (Asia/Shanghai)</p>
-            <p>GitHub Copilot app 和 Copilot cloud agent 现在可通过 enterprise managed settings 进行统一治理，沿用企业已有的集中式策略管理。</p>
-            <p class="why"><strong>为什么重要</strong>这把 agent 和应用层纳入企业统一管控框架，有利于标准化配置、降低 shadow AI 风险，并提升大规模部署的一致性。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>10/10</dd></div>
-              <div><dt>重要性</dt><dd>49/100</dd></div>
-              <div><dt>KANE</dt><dd>86/100</dd></div>
-            </dl>
+            <p class="story-summary">GitHub Copilot app 和 Copilot cloud agent 现在可通过 enterprise managed settings 进行统一治理，沿用企业已有的集中式策略管理。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article>
         <article class="update">
-          <div class="update-index">02</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">AI Tools</span><span>Test</span></div>
+            <p class="story-label">Test / AI Tools</p>
             <h3><a href="https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy" rel="noopener noreferrer">Manage GitHub Copilot app access with a dedicated policy</a></h3>
-            <p class="source-line">GitHub Copilot Changelog · 2026-07-28 04:43 (Asia/Shanghai)</p>
-            <p>GitHub Copilot app 新增独立策略，可在企业和组织层级单独控制其访问权限。</p>
-            <p class="why"><strong>为什么重要</strong>企业可以把 Copilot app 纳入更细粒度的权限与合规框架，减少生成式工具扩散带来的安全和治理风险。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>10/10</dd></div>
-              <div><dt>重要性</dt><dd>47/100</dd></div>
-              <div><dt>KANE</dt><dd>84/100</dd></div>
-            </dl>
+            <p class="story-summary">GitHub Copilot app 新增独立策略，可在企业和组织层级单独控制其访问权限。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article>
         <article class="update">
-          <div class="update-index">03</div>
           <div class="update-content">
-            <div class="tag-row"><span class="tag">Enterprise AI</span><span>Test</span></div>
+            <p class="story-label">Test / Enterprise AI</p>
             <h3><a href="https://aws.amazon.com/blogs/machine-learning/beyond-rag-task-aware-knowledge-compression-for-enterprise-ai-on-aws/" rel="noopener noreferrer">Beyond RAG: Task-aware knowledge compression for enterprise AI on AWS</a></h3>
-            <p class="source-line">AWS Machine Learning Blog · 2026-07-28 00:11 (Asia/Shanghai)</p>
-            <p>文章提出 task-aware knowledge compression（TAKC），用于应对跨数百文档的分析任务；方法是在 AWS 上将知识库预压缩为任务特定表示，按多保真层级缓存，并为查询路由到合适层级，同时提供可部署的开源实现。</p>
-            <p class="why"><strong>为什么重要</strong>这针对传统 RAG 在大规模分析任务中的瓶颈，可能显著改善延迟、成本和任务适配性，尤其适合复杂企业知识场景。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>9/10</dd></div>
-              <div><dt>重要性</dt><dd>47/100</dd></div>
-              <div><dt>KANE</dt><dd>82/100</dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-index">04</div>
-          <div class="update-content">
-            <div class="tag-row"><span class="tag">Enterprise AI</span><span>Watch</span></div>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/deepgram-enhances-amazon-sagemaker-ai-support-with-aws-iam-temporary-delegation/" rel="noopener noreferrer">Deepgram enhances Amazon SageMaker AI support with AWS IAM Temporary Delegation</a></h3>
-            <p class="source-line">AWS Machine Learning Blog · 2026-07-28 00:07 (Asia/Shanghai)</p>
-            <p>Deepgram 通过 AWS IAM temporary delegation 增强了在 SageMaker AI 上的集成，并称该方案将初始支持工单排查时间从数天缩短到数分钟。</p>
-            <p class="why"><strong>为什么重要</strong>这体现了模型托管、身份委托和支持运维流程的集成价值，能够提升企业在托管语音模型上的可维护性与响应速度。</p>
-            <dl class="score-line">
-              <div><dt>可靠性</dt><dd>9/10</dd></div>
-              <div><dt>重要性</dt><dd>40/100</dd></div>
-              <div><dt>KANE</dt><dd>71/100</dd></div>
-            </dl>
+            <p class="story-summary">文章提出 task-aware knowledge compression（TAKC），用于应对跨数百文档的分析任务；方法是在 AWS 上将知识库预压缩为任务特定表示，按多保真层级缓存，并为查询路由到合适层级，同时提供可部署的开源实现。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
     </section>
       
-    <section class="section tools" aria-labelledby="tools-title">
-      <h2 id="tools-title">AI Tools Radar <span>工具雷达</span></h2>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>工具或项目</th><th>核心变化</th><th>信号</th></tr></thead>
-          <tbody><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app" rel="noopener noreferrer">Enterprise managed settings in the GitHub Copilot app and Copilot cloud agent</a></th><td>GitHub Copilot app 和 Copilot cloud agent 现在可通过 enterprise managed settings 进行统一治理</td><td><span class="signal">Test</span></td></tr><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy" rel="noopener noreferrer">Manage GitHub Copilot app access with a dedicated policy</a></th><td>GitHub Copilot app 新增独立策略，可在企业和组织层级单独控制其访问权限。</td><td><span class="signal">Test</span></td></tr><tr><th scope="row"><a href="https://github.blog/changelog/2026-07-27-github-copilot-for-jetbrains-adds-improvved-opentelemetry-configuration-and-model-management" rel="noopener noreferrer">GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management</a></th><td>GitHub Copilot for JetBrains 更新了 OpenTelemetry 配置与模型管理能力</td><td><span class="signal">Test</span></td></tr></tbody>
-        </table>
-      </div>
-    </section>
-      <div class="feature-pair">
-    <section class="section enterprise">
-      <h2>Enterprise AI Impact <span>企业 AI 影响</span></h2>
-      <div class="highlight-list"><article><h3><a href="https://aws.amazon.com/blogs/machine-learning/beyond-rag-task-aware-knowledge-compression-for-enterprise-ai-on-aws/" rel="noopener noreferrer">Beyond RAG: Task-aware knowledge compression for enterprise AI on AWS</a></h3><p class="source-line">AWS Machine Learning Blog | Test | KANE relevance 82/100</p></article><article><h3><a href="https://aws.amazon.com/blogs/machine-learning/deepgram-enhances-amazon-sagemaker-ai-support-with-aws-iam-temporary-delegation/" rel="noopener noreferrer">Deepgram enhances Amazon SageMaker AI support with AWS IAM Temporary Delegation</a></h3><p class="source-line">AWS Machine Learning Blog | Watch | KANE relevance 71/100</p></article><article><h3><a href="https://aws.amazon.com/blogs/machine-learning/how-guardoc-transforms-medical-document-processing-with-amazon-nova-models/" rel="noopener noreferrer">How Guardoc transforms medical document processing with Amazon Nova models</a></h3><p class="source-line">AWS Machine Learning Blog | Watch | KANE relevance 60/100</p><p>这说明基础模型已进入具体医疗文档流程，但当前信息更像单点应用案例，主要价值在于展示行业落地模式。</p></article></div>
-    </section></div>
-      
     <section class="section actions" aria-labelledby="actions-title">
-      <h2 id="actions-title">My Recommended Actions <span>我的行动建议</span></h2>
-      <ol><li><span class="action-signal">Test</span><div><h3><a href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app" rel="noopener noreferrer">Enterprise managed settings in the GitHub Copilot app and Copilot cloud agent</a></h3><p>在隔离环境测试。验证重点：enterprise managed settings 是否覆盖更多 agent 行为、数据访问和执行边界，以及是否支持更精细的分组与继承策略（KANE relevance: 86/100）。</p></div></li><li><span class="action-signal">Test</span><div><h3><a href="https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy" rel="noopener noreferrer">Manage GitHub Copilot app access with a dedicated policy</a></h3><p>在隔离环境测试。验证重点：该独立策略是否与更细的身份、数据和审计控制联动，并是否成为 Copilot 全家桶企业部署的标准配置（KANE relevance: 84/100）。</p></div></li><li><span class="action-signal">Test</span><div><h3><a href="https://aws.amazon.com/blogs/machine-learning/beyond-rag-task-aware-knowledge-compression-for-enterprise-ai-on-aws/" rel="noopener noreferrer">Beyond RAG: Task-aware knowledge compression for enterprise AI on AWS</a></h3><p>在隔离环境测试。验证重点：该方法在真实企业工作负载中的准确率、维护成本与可扩展性，以及是否出现标准化的多层知识压缩架构（KANE relevance: 82/100）。</p></div></li></ol>
+      <h2 id="actions-title">行动建议</h2>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：enterprise managed settings 是否覆盖更多 agent 行为、数据访问和执行边界，以及是否支持更精细的分组与继承策略。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该独立策略是否与更细的身份、数据和审计控制联动，并是否成为 Copilot 全家桶企业部署的标准配置。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
     <p>KANE AI Newspaper</p>
-    <p>每日 AI 模型、Agent、企业应用、工具、开源与研究情报。</p>
+    <p>只保留影响判断与行动的信息。</p>
   </footer>
 </body>
 </html>
