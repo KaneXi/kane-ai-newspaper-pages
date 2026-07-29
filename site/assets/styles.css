@@ -1,7 +1,6 @@
 :root {
   color-scheme: light dark;
   --paper: #f4f3ef;
-  --paper-raised: #ebe9e3;
   --ink: #191918;
   --muted: #64635e;
   --line: #c9c6bd;
@@ -47,16 +46,16 @@ a:focus-visible {
 .skip-link {
   position: fixed;
   left: 1rem;
-  top: 1rem;
+  top: 0;
   z-index: 10;
   padding: 0.6rem 0.85rem;
   background: var(--ink);
   color: var(--paper);
-  transform: translateY(-180%);
+  transform: translateY(-110%);
 }
 
 .skip-link:focus {
-  transform: translateY(0);
+  transform: translateY(1rem);
 }
 
 .site-header {
@@ -618,7 +617,6 @@ tbody th {
 @media (prefers-color-scheme: dark) {
   :root {
     --paper: #181816;
-    --paper-raised: #23231f;
     --ink: #efeee9;
     --muted: #aaa79d;
     --line: #414039;
