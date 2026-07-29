@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="本期版面呈现出两个清晰主线：一是 GitHub Copilot 与企业集成能力继续加强，重点落在模型接入、使用度量、权限治理和可观测性；二是研究侧围绕 agent、memory、multimodal reasoning、具身控制与高效训练/推理持续密集迭代。整体看，应用层信号偏稳定向上，但更多是产品工程与系统整合的累积，而非单一突破性平台事件。">
+  <meta name="description" content="高层信号是企业 AI 的重点从“单点生成能力”转向“平台化治理、观测与权限边界”。如果组织正在推进 Copilot/agent rollout，应优先关注模型准入、遥测、组织级用量归因、MCP 接入与运行时回滚/恢复机制，而不是只看模型能力本身。">
   <title>KANE AI Newspaper - 2026-07-29</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -24,14 +24,14 @@
           <p class="issue-label">2026-07-29</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这期不是‘更大模型’驱动，而是‘更可控、更可测、更能嵌入流程’驱动。</blockquote>
+          <blockquote>这期更像是 AI 生产化栈的“控制面”集中爆发：IDE、MCP、OpenTelemetry、组织级报表、AgentCore、memory、observability、authorization。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>14:34</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>17:04</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>AI 正从模型能力竞争转向 agent 系统工程、企业治理与效率优化竞争。</p>
+      <p>本期核心主题是“agentic AI 正在进入生产化与治理化阶段”：一边是 GitHub Copilot 持续增强 IDE 与组织级可观测性、模型接入和用量统计；另一边是 Amazon Bedrock AgentCore 与 MCP 规范演进，把多代理编排、授权和运行时治理推向更标准化的企业落地。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,33 +39,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2607.25995v1" rel="noopener noreferrer">Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?</a></h3>
-            <p class="story-summary">KuTIE 通过引入 live cluster context，包括 Istio call edges、Trivy findings 和 service-account bindings，来提升 LLM 生成 Kubernetes 安全补丁的正确性，特别是在拓扑依赖型问题上效果显著。</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/" rel="noopener noreferrer">How AgentCore Gateway supports the MCP 2026-07-28 spec</a></h3>
+            <p class="story-summary">AgentCore Gateway 支持更新后的 MCP 2026-07-28 规范，该规范引入 stateless 设计、受治理的扩展系统和更强的授权机制，并可通过一次 UpdateGateway 调用启用。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / AI Tools</p>
+            <p class="story-label">Test / AI Tools</p>
             <h3><a href="https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot" rel="noopener noreferrer">Grok 4.5 is now available in GitHub Copilot</a></h3>
-            <p class="story-summary">Grok 4.5 现在可在 GitHub Copilot 中使用，面向快速、agentic coding 和复杂多步工作流，并带有较长上下文窗口。</p>
+            <p class="story-summary">Grok 4.5 作为 xAI 最新 reasoning model，开始在 GitHub Copilot 中 rollout，面向 fast agentic coding 和复杂多步工作流。</p>
             <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / AI Models</p>
-            <h3><a href="https://openai.com/index/scientific-computing-agentic-ai" rel="noopener noreferrer">Scientific computing in the age of agentic AI</a></h3>
-            <p class="story-summary">该条以 field report 形式描述科学家如何使用 AI coding agents 现代化 scientific computing，并加速 genomics 等领域的软件开发与发现。</p>
-            <p class="source-line">OpenAI News</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/market-surveillance-agent-with-langgraph-and-strands-on-agentcore/" rel="noopener noreferrer">Market surveillance agent with LangGraph and Strands on AgentCore</a></h3>
+            <p class="story-summary">该内容展示如何用 LangGraph 和 Strands 在 Amazon Bedrock AgentCore 上搭建并部署生产级多代理系统，包含工作流编排、checkpoint 恢复、记忆和可观测性，案例为市场监控。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这类 topology-aware patching 是否进入安全产品和云运维工作流。</p></article><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：Grok 4.5 在真实编码任务中的稳定性、成本表现，以及是否推动更多第三方模型持续进入 Copilot。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：各类 agent 平台和 IDE 是否快速跟进该版本，以及是否出现兼容性分化或迁移成本。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：Grok 4.5 在 Copilot 内的可用范围、企业可控性、延迟表现，以及是否带来更多 agentic coding 场景的实际采用。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
