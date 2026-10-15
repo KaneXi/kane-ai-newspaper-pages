@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="对企业高管而言，最明确的信号不是某个单点模型，而是 AI 开始进入可计费、可审计、可接入业务系统的执行层：安全修复、IT 工单、云查询、PPT 生成、支付、机器人控制都在被 agent 化。优先级应放在流程边界、权限、审计、回滚与评测上，而不是仅做模型试点。">
-  <title>KANE AI Newspaper - 2026-10-14</title>
+  <meta name="description" content="本期信号不是单点模型突破，而是“把 agent 做得更可控、更便宜、更可验证”的工程化竞赛。企业侧在 AWS/OpenAI 生态内快速产品化，研究侧则围绕 RLVR、speculative decoding、KV 压缩、跨接口鲁棒性与机械验证持续堆栈。">
+  <title>KANE AI Newspaper - 2026-10-15</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-14</p>
+          <p class="issue-label">2026-10-15</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>本期版面几乎被“agent 化”吞满：企业侧围绕 Bedrock/AgentCore 的工作流编排、支付、云安全修复、IT 支持、查询代理持续落地；模型侧则是更强的 frontier model、长时程推理和多轮 agent 执行能力；研究侧集中在 RLVR、VLA、长期规划、验证器、记忆与 harness/self-improvement。</blockquote>
+          <blockquote>如果把这些条目合并看，市场正在从“能不能做 agent”切换到“如何规模化部署 agent”：一边是平台厂商把自治、审计、路由、守护栏做成标准件，另一边是学术界不断给出降低成本与降低失控风险的方法论。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>13:14</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>13:04</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>agent 化基础设施与可验证自动化成为主导主题。</p>
+      <p>Agentic AI 与基础模型周边技术继续高密度推进，主线集中在训练后优化、推理加速、可靠性/安全、以及企业级 agent 落地；同时可见机器人、医疗、OCR、文化评测和科学计算等垂直扩散。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,33 +39,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments/" rel="noopener noreferrer">Building agents that transact with Anchor Browser and AgentCore payments</a></h3>
-            <p class="story-summary">展示基于 Amazon Bedrock AgentCore 的 agent 支付能力：agent 可为受 x402 保护的网页资源和 API 自动付款，系统在 runtime 外检查预算、签署交易并在失败时重试，同时不暴露钱包凭证。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/" rel="noopener noreferrer">Natural language security queries at Orca Security using Amazon Bedrock</a></h3>
-            <p class="story-summary">Orca Security 用 Amazon Bedrock 构建自然语言安全查询 agent，将英文问题转换为 Sonar queries，并声称大幅降低查询成本、输入 token 和延迟。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
             <p class="story-label">Watch / AI Models</p>
             <h3><a href="https://openai.com/index/amp-beyond-coding" rel="noopener noreferrer">Amp puts AI agents to work beyond code with OpenAI models</a></h3>
-            <p class="story-summary">Amp 宣布使用 OpenAI 模型推进超越代码场景的 agent 能力，并提到 GPT-6 Astra、Ultrafast、GPT-Live-1 和 Sign in with ChatGPT。</p>
+            <p class="story-summary">Amp 展示了用 OpenAI models 将 agent 能力扩展到 code 之外，并提到 GPT-6 Astra、Ultrafast、GPT-Live-1 等能力组合。</p>
             <p class="source-line">OpenAI News</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2610.20483v1" rel="noopener noreferrer">Decoupled Marginal Sharpening for Training-Free Inference-Time Scaling</a></h3>
+            <p class="story-summary">DMS 通过分离 reasoning sharpening 与 answer marginal sharpening，并配合改进的 SMC，在多个推理任务上取得更高 pass@1。</p>
+            <p class="source-line">arXiv AI Research</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-tamnoon-built-ai-powered-cloud-security-remediation-with-amazon-bedrock/" rel="noopener noreferrer">How Tamnoon built AI-powered cloud security remediation with Amazon Bedrock</a></h3>
+            <p class="story-summary">Tamnoon 在 Amazon Bedrock 上构建 agentic cloud remediation orchestrator，自动调查并安全修复云安全问题，声称显著降低关键暴露且无生产事故。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：安全模型、支付失败处理、审计记录，以及企业是否愿意把真正的资金流权限交给 agent。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：它是否能处理更复杂的安全调查链路，而不只是查询转换。</p></article></div>
+      <div class="action-list"><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：这些能力是否会转化为稳定可用的通用 agent 产品。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这种无训练推理增强是否能在更广模型和更大规模评测中持续领先。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
