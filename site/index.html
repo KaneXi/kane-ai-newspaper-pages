@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="本期信号不是单点模型突破，而是“把 agent 做得更可控、更便宜、更可验证”的工程化竞赛。企业侧在 AWS/OpenAI 生态内快速产品化，研究侧则围绕 RLVR、speculative decoding、KV 压缩、跨接口鲁棒性与机械验证持续堆栈。">
-  <title>KANE AI Newspaper - 2026-10-15</title>
+  <meta name="description" content="高层信号偏向“可治理的代理化”：AWS 的 Trust in Depth、FDE-Gym、LEASH、Librarian Agents 共同指向企业希望把 agent 放进真实流程，但前提是可控、可监测、可证明。另一条信号是“从单模型能力到系统能力”的迁移，许多条目不再讲单一模型 SOTA，而是讲路由、监督、检索、缓存、工作区、评估与 escalation。">
+  <title>KANE AI Newspaper - 2026-10-16</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-15</p>
+          <p class="issue-label">2026-10-16</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>如果把这些条目合并看，市场正在从“能不能做 agent”切换到“如何规模化部署 agent”：一边是平台厂商把自治、审计、路由、守护栏做成标准件，另一边是学术界不断给出降低成本与降低失控风险的方法论。</blockquote>
+          <blockquote>这期内容的核心不是单一“更强模型”，而是企业级 agent 从演示走向可运营系统的结构性推进。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>13:04</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>12:42</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>Agentic AI 与基础模型周边技术继续高密度推进，主线集中在训练后优化、推理加速、可靠性/安全、以及企业级 agent 落地；同时可见机器人、医疗、OCR、文化评测和科学计算等垂直扩散。</p>
+      <p>本期主导主题是“代理系统的工程化成熟”：模型能力仍在进步，但更受关注的是如何让 agent 在复杂环境中稳定执行、记住目标、获取知识、避免漂移、保持可解释与可控。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,25 +39,25 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / AI Models</p>
-            <h3><a href="https://openai.com/index/amp-beyond-coding" rel="noopener noreferrer">Amp puts AI agents to work beyond code with OpenAI models</a></h3>
-            <p class="story-summary">Amp 展示了用 OpenAI models 将 agent 能力扩展到 code 之外，并提到 GPT-6 Astra、Ultrafast、GPT-Live-1 等能力组合。</p>
-            <p class="source-line">OpenAI News</p>
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2610.22350v1" rel="noopener noreferrer">FDE-Gym: The Last Mile of AI Delivery</a></h3>
+            <p class="story-summary">提出 FDE-Gym，模拟前线交付工程师在真实客户场景中处理模糊需求、活系统和未明约束，并用业务 uplift 评分。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2610.20483v1" rel="noopener noreferrer">Decoupled Marginal Sharpening for Training-Free Inference-Time Scaling</a></h3>
-            <p class="story-summary">DMS 通过分离 reasoning sharpening 与 answer marginal sharpening，并配合改进的 SMC，在多个推理任务上取得更高 pass@1。</p>
+            <h3><a href="https://arxiv.org/abs/2610.22280v1" rel="noopener noreferrer">LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents</a></h3>
+            <p class="story-summary">提出 LEASH，用无额外前向的 latent uncertainty 进行 weak-to-strong escalation，并在 handoff 后继续监督强模型。</p>
             <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-tamnoon-built-ai-powered-cloud-security-remediation-with-amazon-bedrock/" rel="noopener noreferrer">How Tamnoon built AI-powered cloud security remediation with Amazon Bedrock</a></h3>
-            <p class="story-summary">Tamnoon 在 Amazon Bedrock 上构建 agentic cloud remediation orchestrator，自动调查并安全修复云安全问题，声称显著降低关键暴露且无生产事故。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/" rel="noopener noreferrer">Introducing Reflection Beam: an open-weight model for agentic coding on AWS</a></h3>
+            <p class="story-summary">介绍 Reflection Beam 这一 open-weight agentic coding 模型，并说明其可通过 Amazon SageMaker JumpStart 或 HyperPod Inference 在 AWS 上部署。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
@@ -65,7 +65,7 @@
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：这些能力是否会转化为稳定可用的通用 agent 产品。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这种无训练推理增强是否能在更广模型和更大规模评测中持续领先。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点看该基准是否成为 enterprise agent 的常用测试集，以及模型在 unstated constraints 上是否出现明显改进。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其在更多电脑使用任务上的成本-性能曲线，以及对黑箱强模型的通用性。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
