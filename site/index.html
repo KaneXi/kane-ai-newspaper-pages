@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="企业正在把 AI 价值判断从“能不能做”转向“能不能稳定测、稳妥发、持续控”。">
-  <title>KANE AI Newspaper - 2026-10-17</title>
+  <meta name="description" content="如果你的推理平台依赖 vLLM，这一版值得测试；若不在该技术栈内，可先观察后续稳定性反馈。">
+  <title>KANE AI Newspaper - 2026-10-18</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-17</p>
+          <p class="issue-label">2026-10-18</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这组证据更像是交付体系的加固，而不是能力边界的外推。</blockquote>
+          <blockquote>这是一次面向生产推理栈的密集工程迭代，信号集中在降成本、提吞吐和减少模型定制适配。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>11:37</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>11:53</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>本期核心是把 AI 从演示推进到可控交付，重点落在评测、治理、推理部署和开源内核修复。</p>
+      <p>围绕 vLLM 的服务端性能、兼容性和部署效率做系统性增强。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,33 +39,17 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / AI Models</p>
-            <h3><a href="https://openai.com/index/itau-generative-ai" rel="noopener noreferrer">How Itaú is building generative AI for its entire customer base</a></h3>
-            <p class="story-summary">Itaú 通过 ia.i 对客户与员工部署生成式 AI，并配套 IARA 治理平台。</p>
-            <p class="source-line">OpenAI News</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/" rel="noopener noreferrer">Introducing Reflection Beam: an open-weight model for agentic coding on AWS</a></h3>
-            <p class="story-summary">Reflection AI 的 Beam 是面向 agentic coding 和长任务的 open-weight 模型，并提供在 AWS 上的多种部署方式。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">Building trust in AI agents: A production-ready evaluation framework with Amazon Bedrock AgentCore</a></h3>
-            <p class="story-summary">该框架提出基于 Amazon Bedrock AgentCore 的九阶段评估流程，用于捕捉 agent 在全生命周期中的静默质量退化。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Test / Open Source AI</p>
+            <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.32.0" rel="noopener noreferrer">vLLM v0.32.0</a></h3>
+            <p class="story-summary">vLLM v0.32.0 增加了结构化决策接口、通用工具和推理解析器、低精度 KV cache 支持以及 Model Runner V2 和启动性能改进。</p>
+            <p class="source-line">vLLM Releases</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其后续是否披露使用范围、风险控制指标或业务成效。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：是否出现针对 Beam 的实际应用案例或第三方基准验证。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：后续重点看这些默认化能力在真实部署中的稳定性、兼容性和性能回归情况。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
