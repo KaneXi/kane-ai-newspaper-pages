@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="对企业决策者而言，这更像是推理基础设施和模型接入能力的持续工程化优化，而不是新的应用范式。">
-  <title>KANE AI Newspaper - 2026-10-19</title>
+  <meta name="description" content="高层可执行信号是：企业不应只看模型参数或榜单，而要把预算投向 agent 的身份、权限、上下文压缩、检索可靠性、输出约束和 harness 评估；同时要警惕 retrieval 与 compression 带来的 evidence substitution 与 faithfulness 损失。对于准备上线 agent 系统的团队，治理和可审计性已经和能力本身同等重要。">
+  <title>KANE AI Newspaper - 2026-10-20</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-19</p>
+          <p class="issue-label">2026-10-20</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这组材料说明基础设施团队仍在围绕成本、延迟和吞吐做精细优化，且优化点已经从单点 kernel 扩展到端到端服务链路。</blockquote>
+          <blockquote>本期版面以 enterprise AI 工程化落地为主轴，集中在 AWS、GitHub 生态中的 agent 基础设施、身份安全、结构化输出、托管模型与推理优化；研究层面则明显偏向 agent 评测、world model、memory、长上下文与多模态工具使用。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>14:44</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>13:11</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>企业推理基础设施的性能与集成优化。</p>
+      <p>Agent 基础设施化与可治理化</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,33 +39,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Open Source AI</p>
-            <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.32.0" rel="noopener noreferrer">vLLM v0.32.0</a></h3>
-            <p class="story-summary">v0.32.0 带来结构化决策接口、通用 parser、低精度 KV cache、Model Runner V2 和更快的启动与服务优化。</p>
-            <p class="source-line">vLLM Releases</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-eon-built-multi-cloud-investigation-with-an-mcp-gateway-on-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Eon built multi-cloud investigation with an MCP Gateway on Amazon Bedrock AgentCore</a></h3>
+            <p class="story-summary">Eon 通过 Amazon Bedrock AgentCore MCP gateway 将 AWS、GCP、Azure 上的工具统一到单一认证入口，替代每个工具单独凭证与本地 MCP 进程，并将新工程师入职时间从两天降到两分钟。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/" rel="noopener noreferrer">Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM</a></h3>
-            <p class="story-summary">vLLM 通过引入 push-based NIXL connector 改进 prefill-decode disaggregation 中的 KV 传输，在基准测试里把转移协调移出关键路径。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/discover-tools-at-runtime-with-aws-agent-registry/" rel="noopener noreferrer">Discover tools at runtime with AWS Agent Registry</a></h3>
+            <p class="story-summary">AWS Agent Registry 支持运行时发现工具，编排器可通过语义搜索在运行时发现 MCP servers 和 A2A agents，再进行实例化与执行，而不是在构建时硬编码所有工具。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/" rel="noopener noreferrer">Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock</a></h3>
-            <p class="story-summary">TwelveLabs Pegasus 1.5 已可在 Amazon Bedrock 中使用，并提供视频分段、参考图多模态提示和最长两小时视频的按需处理。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2610.26836v1" rel="noopener noreferrer">Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy</a></h3>
+            <p class="story-summary">该研究发现，当 LLM agent 通过检索而非直接上下文读取超长科学模拟输出时，准确率会因 evidence substitution 而下降；命名权威输出和控制输出呈现方式能显著改善表现。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这些能力在默认配置中的稳定性，以及不同后端和模型上的兼容范围。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该机制是否进入默认配置，以及在不同硬件和网络条件下的复现结果。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：是否能复用于更多企业场景，以及在权限分层、故障隔离和供应商锁定方面的真实权衡。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该机制是否形成事实标准，以及其与权限、审计、路由成本和工具质量评分的配套能力。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
