@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="高层可执行信号是：企业不应只看模型参数或榜单，而要把预算投向 agent 的身份、权限、上下文压缩、检索可靠性、输出约束和 harness 评估；同时要警惕 retrieval 与 compression 带来的 evidence substitution 与 faithfulness 损失。对于准备上线 agent 系统的团队，治理和可审计性已经和能力本身同等重要。">
-  <title>KANE AI Newspaper - 2026-10-20</title>
+  <meta name="description" content="企业侧信号很清晰：大模型接入云平台正在常态化，真正的差异化不再是“是否能用模型”，而是能否把模型接入权限、租户隔离、审计、跨云统一入口、工具发现和缓存控制做成生产级基础设施。换言之，AI 采购重点正从模型选型转向平台化治理与代理运维。">
+  <title>KANE AI Newspaper - 2026-10-21</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-20</p>
+          <p class="issue-label">2026-10-21</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>本期版面以 enterprise AI 工程化落地为主轴，集中在 AWS、GitHub 生态中的 agent 基础设施、身份安全、结构化输出、托管模型与推理优化；研究层面则明显偏向 agent 评测、world model、memory、长上下文与多模态工具使用。</blockquote>
+          <blockquote>这期不是“更聪明的模型”单独领跑，而是“模型 + 系统 + 治理 + 评测”一起进入工程化分层。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>13:11</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>13:15</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>Agent 基础设施化与可治理化</p>
+      <p>代理系统从“会调用模型”升级为“能在真实工作流中安全执行、记忆、检索、验证和治理”。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,33 +39,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-eon-built-multi-cloud-investigation-with-an-mcp-gateway-on-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Eon built multi-cloud investigation with an MCP Gateway on Amazon Bedrock AgentCore</a></h3>
-            <p class="story-summary">Eon 通过 Amazon Bedrock AgentCore MCP gateway 将 AWS、GCP、Azure 上的工具统一到单一认证入口，替代每个工具单独凭证与本地 MCP 进程，并将新工程师入职时间从两天降到两分钟。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/discover-tools-at-runtime-with-aws-agent-registry/" rel="noopener noreferrer">Discover tools at runtime with AWS Agent Registry</a></h3>
-            <p class="story-summary">AWS Agent Registry 支持运行时发现工具，编排器可通过语义搜索在运行时发现 MCP servers 和 A2A agents，再进行实例化与执行，而不是在构建时硬编码所有工具。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2610.28577v1" rel="noopener noreferrer">Cache Engineering for Agents</a></h3>
+            <p class="story-summary">Cache Engineering for Agents 提出直接控制 active KV cache 的新方案，并配套 AKV serving engine 处理缓存复用、驱逐与恢复。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2610.26836v1" rel="noopener noreferrer">Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy</a></h3>
-            <p class="story-summary">该研究发现，当 LLM agent 通过检索而非直接上下文读取超长科学模拟输出时，准确率会因 evidence substitution 而下降；命名权威输出和控制输出呈现方式能显著改善表现。</p>
+            <h3><a href="https://arxiv.org/abs/2610.28601v1" rel="noopener noreferrer">Evolving Agent Interfaces</a></h3>
+            <p class="story-summary">Agent S4 让 agent 通过任务经验自动演化界面和使用知识，在 OSWorld V2 和 ScienceBoard 上取得显著提升。</p>
             <p class="source-line">arXiv AI Research</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / AI Models</p>
+            <h3><a href="https://openai.com/index/openai-models-google-cloud" rel="noopener noreferrer">OpenAI models are coming to Google Cloud</a></h3>
+            <p class="story-summary">OpenAI frontier models 与 Codex workflows 被接入 Google Cloud 的 Gemini Model Garden，并可通过 Google Cloud Marketplace 使用。</p>
+            <p class="source-line">OpenAI News</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：是否能复用于更多企业场景，以及在权限分层、故障隔离和供应商锁定方面的真实权衡。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该机制是否形成事实标准，以及其与权限、审计、路由成本和工具质量评分的配套能力。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该方案在主流 serving 栈中的兼容性与大规模线上收益。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该思路是否扩展到更多电脑操作场景和更稳定的自动化接口库。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
