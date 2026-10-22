@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="企业侧信号很清晰：大模型接入云平台正在常态化，真正的差异化不再是“是否能用模型”，而是能否把模型接入权限、租户隔离、审计、跨云统一入口、工具发现和缓存控制做成生产级基础设施。换言之，AI 采购重点正从模型选型转向平台化治理与代理运维。">
-  <title>KANE AI Newspaper - 2026-10-21</title>
+  <meta name="description" content="给管理层的信号很明确：AI 预算的重心应从“堆更大模型”转向“建设评测、路由、观测与治理层”。企业最先能获得确定性 ROI 的方向包括：内部知识与文档 ingestion 修复、特定工作流自动化、成本敏感的路由/级联、以及面向一线任务的 agent harness。相反，通用型 agent 的全自动替代仍不成熟，尤其在多轮交互、物理行动、合规判断和复杂规划中。组织应优先建立任务级 benchmark、灰区策略、失败回退机制和数据管道可审计性。">
+  <title>KANE AI Newspaper - 2026-10-22</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-21</p>
+          <p class="issue-label">2026-10-22</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这期不是“更聪明的模型”单独领跑，而是“模型 + 系统 + 治理 + 评测”一起进入工程化分层。</blockquote>
+          <blockquote>本期最强结论是：AI 产业的重心继续从模型能力本身，转向“可部署、可评估、可审计、可协作”的系统工程。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>13:15</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>13:14</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>代理系统从“会调用模型”升级为“能在真实工作流中安全执行、记忆、检索、验证和治理”。</p>
+      <p>AI 正在从“能力竞赛”进入“系统工程竞赛”：评测、路由、编排、校准、可解释性、成本与可靠性成为主战场。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,25 +39,25 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2610.28577v1" rel="noopener noreferrer">Cache Engineering for Agents</a></h3>
-            <p class="story-summary">Cache Engineering for Agents 提出直接控制 active KV cache 的新方案，并配套 AKV serving engine 处理缓存复用、驱逐与恢复。</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Test / AI Models</p>
+            <h3><a href="https://openai.com/index/openai-models-google-cloud" rel="noopener noreferrer">OpenAI models are coming to Google Cloud</a></h3>
+            <p class="story-summary">OpenAI 模型与 Codex 工作流将进入 Google Cloud 的 Gemini Model Garden，并可通过 Google Cloud Marketplace 使用。</p>
+            <p class="source-line">OpenAI News</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2610.28601v1" rel="noopener noreferrer">Evolving Agent Interfaces</a></h3>
-            <p class="story-summary">Agent S4 让 agent 通过任务经验自动演化界面和使用知识，在 OSWorld V2 和 ScienceBoard 上取得显著提升。</p>
+            <h3><a href="https://arxiv.org/abs/2610.30026v1" rel="noopener noreferrer">What the Author Wrote, What the Agent Reads: Silent Cue Loss in Enterprise Document Ingestion</a></h3>
+            <p class="story-summary">研究指出企业文档 ingestion 会静默丢失作者通过格式表达的关键信息，尤其是 highlight 和 colour 等 cue，导致下游 agent 在政策文档任务上自信地答错。</p>
             <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / AI Models</p>
-            <h3><a href="https://openai.com/index/openai-models-google-cloud" rel="noopener noreferrer">OpenAI models are coming to Google Cloud</a></h3>
-            <p class="story-summary">OpenAI frontier models 与 Codex workflows 被接入 Google Cloud 的 Gemini Model Garden，并可通过 Google Cloud Marketplace 使用。</p>
+            <h3><a href="https://openai.com/index/building-chatgpt-ad-stack" rel="noopener noreferrer">How we built ChatGPT’s novel ad stack for user trust and relevance</a></h3>
+            <p class="story-summary">OpenAI 介绍了 ChatGPT 的新广告栈，用 LLM 理解对话意图、将广告与回答分离，并在规模上提供相关广告。</p>
             <p class="source-line">OpenAI News</p>
           </div>
         </article></div>
@@ -65,7 +65,7 @@
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该方案在主流 serving 栈中的兼容性与大规模线上收益。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该思路是否扩展到更多电脑操作场景和更稳定的自动化接口库。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：跨云可用后，企业是否会更快采用 OpenAI 模型及相关工作流。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：文档 ingestion 是否会变成企业 AI 的独立治理层，以及是否会出现更标准的格式保真评测。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
