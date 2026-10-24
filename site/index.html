@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="高层信号是：AI 进入“运营系统”而非“实验系统”阶段。企业需要的不只是更强模型，而是可部署、可解释、可审计、可回滚的 AI 运行机制；同时研究界在为这些需求提供度量、约束与安全护栏。">
-  <title>KANE AI Newspaper - 2026-10-23</title>
+  <meta name="description" content="管理层应关注 AI 投入重心是否已从模型采购转向工作流集成、权限治理、观测与运营成本控制；本期更像是企业级采用路径的“工程补课”，不是重新定义赛道的突破。">
+  <title>KANE AI Newspaper - 2026-10-24</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-23</p>
+          <p class="issue-label">2026-10-24</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这是一版典型的“从能力竞赛转向系统工程”的版面。</blockquote>
+          <blockquote>这组条目不是单点突破，而是平台层在补齐企业采用的关键基础设施：一端是开发者工作流里 Copilot 的覆盖面和协作入口继续加深，另一端是云厂商围绕 agent、RL、endpoint scaling、生产运营与安全边界提供模板化能力。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>13:12</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>11:58</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>agentic systems 的生产化落地与可信治理：包括云端编排、企业集成、审计/合规、权限与证据恢复，以及与之配套的低成本评测和可解释机制。</p>
+      <p>AI 工作流平台化与企业级治理补位</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -40,32 +40,32 @@
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/" rel="noopener noreferrer">Announcing new ways to customize models with SageMaker AI, without managing GPUs</a></h3>
-            <p class="story-summary">Amazon SageMaker AI 的 serverless model customization 新增 training sessions，支持用户自定义 post-training loop，例如 custom loss、reward signals 或 multi-turn RL，而平台负责 GPU 分配、分布式执行、故障恢复和 checkpoint 存储。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/" rel="noopener noreferrer">How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations</a></h3>
+            <p class="story-summary">Bayer Crop Science 在 Amazon Bedrock AgentCore 上构建了名为 Agentic Decision Engine（ADE）的多 agent 平台，使育种者、分析师和研究人员可以用自然语言查询其分析平台；文章还介绍了其架构、五项设计决策及面向生产的准备方式。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/" rel="noopener noreferrer">Write your own training loop - without managing GPUs - with Amazon SageMaker training session APIs</a></h3>
-            <p class="story-summary">Amazon SageMaker AI training session APIs 允许用户用 Python 脚本编写 LLM training loop（如 SFT、RL 或 custom objectives），而服务负责运行 GPU，并给出 GRPO 和 RL workload 示例。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/" rel="noopener noreferrer">Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide</a></h3>
+            <p class="story-summary">文章介绍如何在 Amazon SageMaker AI 上实现 Multi-Turn Reinforcement Learning（MTRL）：让模型基于完整多步任务结果而不是单步标注来训练，并以 Wordle 为例展示部署 agent 和 reward、准备数据集、训练与评估的流程。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2610.31593v1" rel="noopener noreferrer">Simulated Control Evals</a></h3>
-            <p class="story-summary">Simulated control evals 用语言模型模拟 tool responses 来做控制评测，在 LinuxArena 上发现其比 BashArena 更能预测部署环境中的安全性与攻击/监控行为。</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Watch / AI Models</p>
+            <h3><a href="https://openai.com/index/securing-our-frontier-model-training-environment" rel="noopener noreferrer">Securing our frontier model training environment</a></h3>
+            <p class="story-summary">OpenAI 说明其如何强化 frontier model training 和 evaluation 环境的安全封装，包括离线环境和高算力红队测试。</p>
+            <p class="source-line">OpenAI News</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：它是否成为企业进行 RLHF、RLAIF 和其他 post-training 的默认托管方式。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其与 notebook、CI/CD 和实验跟踪工具的集成深度。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其是否公开更多性能、可靠性、权限隔离和 ROI 数据，以及是否扩展到更多业务流程。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该方法是否会沉淀为更标准化的 SageMaker 模板，以及是否能扩展到真实业务任务而不只是示例任务。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
