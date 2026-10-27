@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="企业 AI 的近期信号是：重点从“做出模型”转向“把模型、agent 和检索系统稳定地规模化运行在云平台上”。">
-  <title>KANE AI Newspaper - 2026-10-26</title>
+  <meta name="description" content="企业高管应重点关注三件事：第一，agent 的价值越来越取决于 harness、权限、评测和观测，而非单纯模型选择；第二，成本优化与实时性已成为一线竞争指标；第三，安全、越权、评测偏差和 reward hacking 不是边角问题，而是决定能否规模化部署的核心风险。">
+  <title>KANE AI Newspaper - 2026-10-27</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-10-26</p>
+          <p class="issue-label">2026-10-27</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这些内容更像是将复杂 AI 工作负载拆解为可部署、可监控、可配额治理的工程模板，而不是新模型能力本身的突破。</blockquote>
+          <blockquote>这期的共同方向是：AI 系统从“生成答案”转向“在真实工作流中可靠完成任务”。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>14:41</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>14:04</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>AWS 原生企业 AI 工程化与 agent/检索系统的可部署性。</p>
+      <p>agent 化、工程化与安全/评测重构同时加速</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -39,25 +39,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-agentic-retrieval-on-a-managed-amazon-bedrock-knowledge-base-with-cdk/" rel="noopener noreferrer">Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK</a></h3>
-            <p class="story-summary">该证据展示用 CDK 在 Managed Amazon Bedrock Knowledge Base 上搭建 agentic retrieval，支持跨两个知识库路由、引用式回答、七层可观测性以及持续和按需评估。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Watch / AI Models</p>
+            <h3><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" rel="noopener noreferrer">Genie 4: A new generation of world simulation</a></h3>
+            <p class="story-summary">Genie 4 被描述为新一代 world model，主打实时仿真的更高真实感。</p>
+            <p class="source-line">Google DeepMind Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/" rel="noopener noreferrer">Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock</a></h3>
-            <p class="story-summary">该证据介绍在 Amazon Bedrock 上对 OpenAI models 使用 prompt caching，以减少 agent 每步重复携带上下文带来的成本和延迟。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Watch / AI Models</p>
+            <h3><a href="https://openai.com/index/oracle-apps-in-chatgpt" rel="noopener noreferrer">OpenAI expands partnership with Oracle to bring its apps to ChatGPT</a></h3>
+            <p class="story-summary">OpenAI 与 Oracle 扩大合作，将业务应用和 AI agents 带入 ChatGPT，并推动新的 Oracle 产品。</p>
+            <p class="source-line">OpenAI News</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Watch / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2610.35845v1" rel="noopener noreferrer">Work Agents: Systems, Capabilities, and Optimization</a></h3>
+            <p class="story-summary">Work Agents 提出以工作结果为中心的系统框架来理解和优化 agent，区分 work persistence 与 work openness，并讨论模型优化、harness 优化和联合优化。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这种一体化 CDK 方案是否成为企业知识助手的标准部署模板。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：prompt caching 是否被纳入更多 agent 框架的默认实践。</p></article></div>
+      <div class="action-list"><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：其是否公开基准、是否支持更长时序交互，以及是否能与具身或规划系统结合。</p></article><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：具体业务应用接入范围、权限边界、数据隔离和企业采购影响。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
