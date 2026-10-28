@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Management should focus on three things: first, inference cost and latency optimization are becoming core competitive capabilities; second, failure modes in agents and multi-turn systems require new evaluation metrics and governance boundaries; third, industry adoption is increasingly dependent on data access, permissions, privacy, and interpretability, not just the model itself.">
+  <title>KANE AI Newspaper - 2026-09-11</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="alternate" hreflang="zh" href="../../editions/2026-09-11.html">
+  <script defer src="../../assets/language.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">KANE MARKET INTELLIGENCE OS</a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html">Today</a>
+      <a href="../archive.html">Archive</a>
+    <a class="language-switch" data-language="zh" lang="zh" hreflang="zh" href="../../editions/2026-09-11.html?lang=zh" aria-label="切换到中文">中文</a>
+    </nav>
+  </header>
+  <main id="content">
+    <article class="edition-page">
+      <header class="edition-hero">
+        <div>
+          <p class="issue-label">2026-09-11</p>
+          <h1>Morning AI Briefing</h1>
+          <p class="field-label">Key assessment</p>
+          <blockquote>This panel shows clear signs of an “acceleration phase”: on the enterprise side, productization continues around inference acceleration, cache reuse, model integration, assistant workflows, and governance/compliance; on the open-source side, the focus is on model runtimes, inference efficiency, standardized interfaces, and plug-and-play toolchain optimization; on the research side, many papers center on evaluation, robustness, distribution shift, MoE, agent reliability, and multimodal/speech tasks.</blockquote>
+        </div>
+        <p class="edition-meta"><span>Published</span><strong>12:32</strong></p>
+      </header>
+      
+    <aside class="landscape" aria-labelledby="landscape-title">
+      <h2 id="landscape-title">Today&#x27;s context</h2>
+      <p>Shift from model capability competition to systems engineering, evaluation reliability, and deployment efficiency.</p>
+    </aside>
+      
+    <section class="section updates" id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">Key updates</h2>
+      <div class="updates-grid">
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Open Source AI</p>
+            <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.29.0" rel="noopener noreferrer">vLLM v0.29.0</a></h3>
+            <p class="story-summary">Version v0.29.0 makes Model Runner V2 the default path for all models, and adds multiple inference and memory optimizations, including automatic scaling profiling for KV cache, batch-sharded sampling, prompt embeds, hidden state extraction, cudagraph scheduling for unified decode, and more speculative decoding improvements; it also adds and improves support for multiple model types and performance paths.</p>
+            <p class="source-line">vLLM Releases</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/" rel="noopener noreferrer">Reduce LLM latency with prefix-aware routing on Amazon SageMaker Inference</a></h3>
+            <p class="story-summary">Amazon SageMaker Inference provides prefix-aware routing that sends requests with shared prompt prefixes to the same instance to keep the KV cache warm; on Llama 3.1 70B, it cuts P50 time to first token by up to 77% and raises KV cache hit rate from about 25% to over 80%.</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Watch / AI Models</p>
+            <h3><a href="https://openai.com/index/expanding-ai-access-us-government" rel="noopener noreferrer">Expanding AI access and cyber defense for federal, state, local, and tribal governments</a></h3>
+            <p class="story-summary">OpenAI and GSA are offering major discounts and expanded cyber defense support for federal, state, local, and tribal governments.</p>
+            <p class="source-line">OpenAI News</p>
+          </div>
+        </article></div>
+    </section>
+      
+    <section class="section actions" aria-labelledby="actions-title">
+      <h2 id="actions-title">Recommended actions</h2>
+      <div class="action-list"><article class="action"><strong>Test first</strong><p>Tested in an isolated environment. Key validation: the stability of these optimizations across different hardware and model families, and whether ROCm and other compatibility paths continue to be added later.</p></article><article class="action"><strong>Test first</strong><p>Tested in an isolated environment. Key question: whether it can still maintain gains under high concurrency, multi-tenancy, and changing request distributions, and the real cost curve compared with other routing/scheduling strategies.</p></article></div>
+    </section>
+    </article></main>
+  <footer class="site-footer">
+    <p>KANE AI Newspaper</p>
+    <p>Signals that inform decisions and action.</p>
+  </footer>
+</body>
+</html>

@@ -87,8 +87,28 @@ main,
 
 nav {
   display: flex;
+  align-items: center;
   gap: 1.4rem;
   white-space: nowrap;
+}
+
+.language-switch {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--line);
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+html[lang="en"] .edition-hero h1 {
+  max-width: 14ch;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+}
+
+html[lang="en"] .actions > h2 {
+  max-width: none;
+  overflow-wrap: normal;
 }
 
 nav a {
@@ -430,6 +450,9 @@ p {
 
   .site-header {
     min-height: 4.375rem;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    padding-block: 0.75rem;
   }
 
   .wordmark {
