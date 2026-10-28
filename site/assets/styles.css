@@ -111,6 +111,11 @@ html[lang="en"] .actions > h2 {
   overflow-wrap: normal;
 }
 
+html[lang="en"] .actions {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
 nav a {
   font-size: 0.84rem;
   font-weight: 700;
