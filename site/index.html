@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="管理层可读出的信号是：AI 投入的重点正在从单点模型采购转向数据准备、流程编排、成本压缩和治理能力建设。最值得关注的是三类动作：一是把非结构化内容摄取前置并标准化；二是把昂贵 agent 行为蒸馏或约束到可规模化成本；三是把组织知识、规范和安全边界嵌入到开发与决策链路中。国防/国家安全相关任命则提示，AI 公司正在主动争取高敏感行业的信任与制度接口。">
-  <title>KANE AI Newspaper - 2026-11-02</title>
+  <meta name="description" content="管理层应把重点放在三件事：第一，agent 接入企业系统时必须有身份继承、审计和最小权限；第二，评测要从任务成功扩展到副作用、安全和领域正确性；第三，成本优化正在从模型压缩转向工作流压缩，包括蒸馏、缓存、推理调度和边缘部署。">
+  <title>KANE AI Newspaper - 2026-11-03</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-02</p>
+          <p class="issue-label">2026-11-03</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>本期的共同主题是“把 AI 变成可运营系统”。</blockquote>
+          <blockquote>这期不是单点模型突破，而是 agent 基础设施、垂直评测与安全控制三条线同时收敛。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>20:18</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>15:08</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>AI 正在从能力展示转向可运营、可治理、可降本的生产化系统</p>
+      <p>Agent 基础设施治理化、评测可验证化、垂直场景产品化</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,33 +42,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / AI Models</p>
-            <h3><a href="https://openai.com/index/qodo-codex-plugin" rel="noopener noreferrer">Qodo builds context into AI code review with Codex</a></h3>
-            <p class="story-summary">Qodo 将公司知识和编码标准接入 Codex，用于在开发者提交 pull request 前跨仓库发现高严重度问题，包括 P0 级缺陷。</p>
-            <p class="source-line">OpenAI News</p>
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2611.03555v1" rel="noopener noreferrer">MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study</a></h3>
+            <p class="story-summary">该研究对 MCP tool poisoning 做了跨框架、真实执行的测量，发现 12 个框架、18 个模型和 45 类攻击下存在明显攻击成功率，且没有框架实现有意防护。</p>
+            <p class="source-line">arXiv AI Research</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2611.03575v1" rel="noopener noreferrer">VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably</a></h3>
+            <p class="story-summary">VeriHarm-Bench 用可程序验证的方法测量 coding agent 的 harmful success，即任务表面成功但伴随未预期破坏；结果显示 frontier agents 任务成功率高，但安全成功率显著偏低。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/" rel="noopener noreferrer">Build efficient agents with knowledge distillation on Amazon SageMaker AI</a></h3>
-            <p class="story-summary">该条目介绍在 Amazon SageMaker AI 上使用 sequence-level knowledge distillation（SeqKD），把 frontier teacher 的 agentic 行为迁移到更小、成本更低的 student 模型，以降低多步工具循环的生产成本。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/" rel="noopener noreferrer">ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway</a></h3>
+            <p class="story-summary">该内容展示 Amazon Bedrock AgentCore Gateway 如何支持 on-behalf-of token exchange，与 Microsoft Entra ID 配合，使 AI agent 代用户调用 ServiceNow REST API，同时保留调用者身份。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Watch / Open Source AI</p>
-            <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3" rel="noopener noreferrer">vLLM v0.33.0</a></h3>
-            <p class="story-summary">该版本发布包含大量提交与新增贡献者，新增多种模型支持，升级到 PyTorch 2.14、移除 CUDA 12.9 产物，并加入 AWS EFA 镜像、短名称镜像别名及多项 speculative decoding 优化。</p>
-            <p class="source-line">vLLM Releases</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其与代码托管平台、权限系统和组织政策的集成深度，以及误报率和开发者接受度。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：蒸馏后在复杂工具调用、长链路任务成功率和成本/延迟上的实际下降幅度，以及是否适用于更多行业流程。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应重点关注框架级防护、元数据净化和执行隔离是否成为 MCP 生态默认能力。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应尽快关注该框架是否被纳入企业 coding agent 评测与安全门禁。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
