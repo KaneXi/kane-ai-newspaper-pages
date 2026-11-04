@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="管理层应把重点放在三件事：第一，agent 接入企业系统时必须有身份继承、审计和最小权限；第二，评测要从任务成功扩展到副作用、安全和领域正确性；第三，成本优化正在从模型压缩转向工作流压缩，包括蒸馏、缓存、推理调度和边缘部署。">
-  <title>KANE AI Newspaper - 2026-11-03</title>
+  <meta name="description" content="对企业决策者而言，当前最值得投入的是 agent 治理栈、评估栈和工作流集成，而不是单独追逐新模型；对研发团队而言，应优先关注长上下文压缩、推理稳定性、记忆机制、审批与身份传递、以及可复现评测。若已有 Copilot/Bedrock/Quick 体系，下一步重点不是再接一个模型，而是把代理接入权限、审计和业务数据层。">
+  <title>KANE AI Newspaper - 2026-11-04</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-03</p>
+          <p class="issue-label">2026-11-04</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这期不是单点模型突破，而是 agent 基础设施、垂直评测与安全控制三条线同时收敛。</blockquote>
+          <blockquote>这期版面最重要的结论是：AI 市场的价值焦点正在从“更聪明的模型”迁移到“可上线的代理系统”。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>15:08</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>15:27</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>Agent 基础设施治理化、评测可验证化、垂直场景产品化</p>
+      <p>代理系统的可控化、低成本化与可审计化正在成为主导主题。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,33 +42,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.03555v1" rel="noopener noreferrer">MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study</a></h3>
-            <p class="story-summary">该研究对 MCP tool poisoning 做了跨框架、真实执行的测量，发现 12 个框架、18 个模型和 45 类攻击下存在明显攻击成功率，且没有框架实现有意防护。</p>
-            <p class="source-line">arXiv AI Research</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.03575v1" rel="noopener noreferrer">VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably</a></h3>
-            <p class="story-summary">VeriHarm-Bench 用可程序验证的方法测量 coding agent 的 harmful success，即任务表面成功但伴随未预期破坏；结果显示 frontier agents 任务成功率高，但安全成功率显著偏低。</p>
-            <p class="source-line">arXiv AI Research</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/" rel="noopener noreferrer">ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway</a></h3>
-            <p class="story-summary">该内容展示 Amazon Bedrock AgentCore Gateway 如何支持 on-behalf-of token exchange，与 Microsoft Entra ID 配合，使 AI agent 代用户调用 ServiceNow REST API，同时保留调用者身份。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How U Mobile built agentic telco operations with Amazon Bedrock AgentCore</a></h3>
+            <p class="story-summary">U Mobile 基于 Amazon Bedrock AgentCore 构建 agentic AI 运维平台 AiDaH，九个月上线后可覆盖 150 余种运维场景，并显著减少 trouble tickets。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2611.05320v1" rel="noopener noreferrer">PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data</a></h3>
+            <p class="story-summary">PyRUA-DataFarm 让 coding agent 充当机器人遥操作员，用单个校准样本在仿真中重建任务，生成可直接训练的真实感机器人数据，并显著降低数据成本。</p>
+            <p class="source-line">arXiv AI Research</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / AI Tools</p>
+            <h3><a href="https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant" rel="noopener noreferrer">GitHub Copilot is now available in Xcode’s coding assistant</a></h3>
+            <p class="story-summary">GitHub Copilot 现在可直接在 Xcode 的内置 coding assistant 中使用，属于公开预览阶段，意味着 Copilot 进入原生 iOS/macOS 开发工作流。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应重点关注框架级防护、元数据净化和执行隔离是否成为 MCP 生态默认能力。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应尽快关注该框架是否被纳入企业 coding agent 评测与安全门禁。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其自动化范围是否继续扩展，以及是否出现安全、责任归属或误操作方面的新治理要求。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点看其在更多任务和更严格评审下的复现性，以及仿真到真实的偏差。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
