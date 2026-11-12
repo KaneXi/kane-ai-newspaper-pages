@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Management should focus on three things: first, agent evaluation and auditing capabilities have become procurement and launch thresholds; second, inference cost optimization is shifting from model compression to dynamic budget allocation, workflow distillation, and structured reuse of retrieval/tool calls; third, industry solutions are forming standardized entry points through foundational platforms, especially the Bedrock/GitHub ecosystem, and enterprises that do not build their own orchestration and governance layer will be more easily locked in by platforms.">
-  <title>KANE AI Newspaper - 2026-11-11</title>
+  <meta name="description" content="High-priority signal: enterprise AI is moving from pilots to platformized deployment, and the next round of competition will focus on agent infrastructure, evaluation benchmarks, permission governance, and cost that can be falsified. If you are building platforms, cloud services, developer tools, or industry applications, prioritize &#x27;quantifiable ROI + auditable agents&#x27; rather than isolated demos.">
+  <title>KANE AI Newspaper - 2026-11-12</title>
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="alternate" hreflang="zh" href="../index.html">
   <script defer src="../assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-11</p>
+          <p class="issue-label">2026-11-12</p>
           <h1>Morning AI Briefing</h1>
           <p class="field-label">Key assessment</p>
-          <blockquote>The strongest signal this issue is not a single model, but that AI systems are beginning to reorganize around being measurable, controllable, billable, and reusable: on the enterprise side, agents, evaluation, tool permissions, token observability, and workflows are being solidified into product modules; on the research side, theory and metrics for these modules are being filled in.</blockquote>
+          <blockquote>This issue is not a story about &#x27;more powerful models,&#x27; but about how models are organized into governable systems.</blockquote>
         </div>
-        <p class="edition-meta"><span>Published</span><strong>15:14</strong></p>
+        <p class="edition-meta"><span>Published</span><strong>15:50</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">Today&#x27;s context</h2>
-      <p>The main theme of this issue is the industrialization of agent systems: companies are turning agents into controlled, billable, auditable production systems; research is providing the theories and tools for these systems in evaluation, optimization, continual learning, and interpretability.</p>
+      <p>Enterprise AI agent infrastructure and governance standardization are becoming the clear main theme; nearly all high-priority items revolve around Amazon Bedrock, AgentCore, Agent Registry, MCP, evaluation, cost control, permissions, and multi-agent orchestration.</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,33 +42,25 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.14492v1" rel="noopener noreferrer">ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows</a></h3>
-            <p class="story-summary">ReTrace distills SOPs and a small amount of agent logs into reusable workflows, replacing LLM decisions about the next step with code, and significantly reducing cost and latency.</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/" rel="noopener noreferrer">Build composable, interoperable multi-agent systems with A2A on AWS</a></h3>
+            <p class="story-summary">The article shows how to build a composable, interoperable multi-agent system on AWS using the Agent-to-Agent (A2A) protocol: a LangChain orchestrator on Amazon ECS communicates with a Strands agent on Amazon Bedrock AgentCore via bidirectional, OAuth-authenticated calls, with neither side depending on the other’s framework or SDK.</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / AI Models</p>
-            <h3><a href="https://deepmind.google/blog/introducing-alphaproof-code/" rel="noopener noreferrer">Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</a></h3>
-            <p class="story-summary">AlphaProof Code emphasizes deep verification of complex software through large-scale Lean proof validation.</p>
-            <p class="source-line">Google DeepMind Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.14504v1" rel="noopener noreferrer">Emergent Biological Capabilities in a Foundation Model for Molecular Interactions</a></h3>
-            <p class="story-summary">Bonbon is a molecular interaction foundation model that shows emergent capabilities at the mechanism, site, and bond levels in zero-shot settings, and achieves a high hit rate in wet-lab experiments.</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/" rel="noopener noreferrer">Run agents securely and efficiently with the next generation AgentCore runtime</a></h3>
+            <p class="story-summary">The new-generation Amazon Bedrock AgentCore runtime is designed for long-running, multi-step AI agents, offering hardware-isolated sessions, faster startup, higher compute, pay-as-you-go billing, and expanded isolation down to the data layer.</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">Recommended actions</h2>
-      <div class="action-list"><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Verification focus: whether it becomes the standard migration path from agent to workflow in business process automation.</p></article><article class="action"><strong>Watch list</strong><p>Continue monitoring; do not adopt yet. Focus: whether it truly enters high-risk software verification pipelines.</p></article></div>
+      <div class="action-list"><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Key verification points: whether A2A will achieve broad ecosystem adoption later, or is just a wrapper layer for AWS’s internal orchestration approach.</p></article><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Key verification points: whether it becomes the de facto standard for enterprise agent workloads, and whether the market accepts the trade-offs among performance, isolation, and cost.</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">

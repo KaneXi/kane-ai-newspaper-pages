@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="管理层应把注意力放在三件事：第一，agent 评测和审计能力已成为采购与上线门槛；第二，推理成本优化正在从模型压缩转向动态预算分配、工作流蒸馏和检索/工具调用的结构化复用；第三，行业方案正在借助基础平台（尤其是 Bedrock/GitHub 生态）形成标准化入口，企业若不建立自己的编排与治理层，将更容易被平台锁定。">
-  <title>KANE AI Newspaper - 2026-11-11</title>
+  <meta name="description" content="高优先级信号：企业 AI 正从试点进入平台化建设阶段，下一轮竞争重点是 agent 基础设施、评估基准、权限治理和成本可证伪。若你在做平台、云、开发者工具或行业应用，应优先围绕‘可量化 ROI + 可审计 agent’布局，而不是单点 demo。">
+  <title>KANE AI Newspaper - 2026-11-12</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-11</p>
+          <p class="issue-label">2026-11-12</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>本期最强信号不是某个单一模型，而是 AI 系统开始围绕“可评测、可控、可计费、可复用”重构：企业侧把 agent、评测、工具权限、token 观测和工作流固化为产品模块；研究侧则在补齐这些模块的理论与指标。</blockquote>
+          <blockquote>本期不是‘更强模型’新闻，而是‘模型如何被组织成可治理系统’的新闻。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>15:14</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>15:50</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>本期主线是“代理系统的工业化”：企业在把 agent 变成受控、可计费、可审计的生产系统；研究在为这些系统提供评测、优化、连续学习和可解释性的理论与工具。</p>
+      <p>企业级 AI agent 基础设施与治理标准化成为绝对主线，几乎所有高权重条目都围绕 Amazon Bedrock、AgentCore、Agent Registry、MCP、评估、成本控制、权限与多 agent 编排展开。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,33 +42,25 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.14492v1" rel="noopener noreferrer">ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows</a></h3>
-            <p class="story-summary">ReTrace 把 SOP 和少量 agent 日志蒸馏为可复用工作流，用代码替代 LLM 决定下一步，并显著降低成本和时延。</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/" rel="noopener noreferrer">Build composable, interoperable multi-agent systems with A2A on AWS</a></h3>
+            <p class="story-summary">文章展示在 AWS 上使用 Agent-to-Agent (A2A) 协议构建可组合、可互操作的 multi-agent system：LangChain orchestrator 在 Amazon ECS 上与 Amazon Bedrock AgentCore 上的 Strands agent 通过双向、OAuth 认证调用通信，双方无需依赖彼此的框架或 SDK。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / AI Models</p>
-            <h3><a href="https://deepmind.google/blog/introducing-alphaproof-code/" rel="noopener noreferrer">Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</a></h3>
-            <p class="story-summary">AlphaProof Code 强调通过大量 Lean proof 验证复杂软件，目标是深度验证。</p>
-            <p class="source-line">Google DeepMind Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.14504v1" rel="noopener noreferrer">Emergent Biological Capabilities in a Foundation Model for Molecular Interactions</a></h3>
-            <p class="story-summary">Bonbon 是一个分子相互作用 foundation model，在零样本下展现机制、位点和键级别的涌现能力，并在湿实验中取得较高 hit rate。</p>
-            <p class="source-line">arXiv AI Research</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/" rel="noopener noreferrer">Run agents securely and efficiently with the next generation AgentCore runtime</a></h3>
+            <p class="story-summary">新一代 Amazon Bedrock AgentCore runtime 面向长时间运行、多步骤的 AI agents，提供硬件隔离会话、更快启动、更高算力、按使用计费，以及扩展到数据层面的隔离能力。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：它是否成为业务流程自动化中“agent -&gt; workflow”的标准迁移方式。</p></article><article class="action"><strong>观察清单</strong><p>继续观察，暂不采用。关注点：其是否真正进入高风险软件验证链路。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：后续要看 A2A 是否能形成广泛的生态采用，或只是 AWS 内部编排方案的包装层。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其是否成为企业代理工作负载的事实标准，以及性能、隔离与成本之间的权衡是否被市场接受。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
