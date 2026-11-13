@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="高优先级信号：企业 AI 正从试点进入平台化建设阶段，下一轮竞争重点是 agent 基础设施、评估基准、权限治理和成本可证伪。若你在做平台、云、开发者工具或行业应用，应优先围绕‘可量化 ROI + 可审计 agent’布局，而不是单点 demo。">
-  <title>KANE AI Newspaper - 2026-11-12</title>
+  <meta name="description" content="企业侧信号非常一致：AI 正从“能用”转向“可管、可算账、可编排、可迁移”。AWS 相关条目几乎贯穿成本归因、权限控制、Managed Knowledge Base、AgentCore、A2A、多代理和部署隔离；GitHub Copilot 则继续把新模型与企业仓库工作流打通。">
+  <title>KANE AI Newspaper - 2026-11-13</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-12</p>
+          <p class="issue-label">2026-11-13</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>本期不是‘更强模型’新闻，而是‘模型如何被组织成可治理系统’的新闻。</blockquote>
+          <blockquote>这一版面的核心不是单一模型突破，而是基础设施化和治理化。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>15:50</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>15:31</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>企业级 AI agent 基础设施与治理标准化成为绝对主线，几乎所有高权重条目都围绕 Amazon Bedrock、AgentCore、Agent Registry、MCP、评估、成本控制、权限与多 agent 编排展开。</p>
+      <p>AI 系统的工程化治理与成本控制</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -43,16 +43,16 @@
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/" rel="noopener noreferrer">Build composable, interoperable multi-agent systems with A2A on AWS</a></h3>
-            <p class="story-summary">文章展示在 AWS 上使用 Agent-to-Agent (A2A) 协议构建可组合、可互操作的 multi-agent system：LangChain orchestrator 在 Amazon ECS 上与 Amazon Bedrock AgentCore 上的 Strands agent 通过双向、OAuth 认证调用通信，双方无需依赖彼此的框架或 SDK。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore</a></h3>
+            <p class="story-summary">Natera 基于 Amazon Bedrock AgentCore 构建了名为 SWARM 的 agentic AI 系统，用于承载实验室运营知识并规模化部署，宣称可将首次响应时间提升约 130 倍，并实现 96.2% 的支持工单自动覆盖。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/" rel="noopener noreferrer">Run agents securely and efficiently with the next generation AgentCore runtime</a></h3>
-            <p class="story-summary">新一代 Amazon Bedrock AgentCore runtime 面向长时间运行、多步骤的 AI agents，提供硬件隔离会话、更快启动、更高算力、按使用计费，以及扩展到数据层面的隔离能力。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/" rel="noopener noreferrer">Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</a></h3>
+            <p class="story-summary">Amazon Bedrock 提供零侵入的成本归因能力，可将每次推理调用追溯到发起请求的 IAM principal；该内容展示了如何结合 IAM Identity Center、session tags 和 CUR 2.0 按用户归因并施加使用上限。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
@@ -60,7 +60,7 @@
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：后续要看 A2A 是否能形成广泛的生态采用，或只是 AWS 内部编排方案的包装层。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其是否成为企业代理工作负载的事实标准，以及性能、隔离与成本之间的权衡是否被市场接受。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应重点验证这些提升是否在更复杂工单、异常流程和长期运行中保持，及其对人工复核成本的真实影响。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其对复杂代理链路、多工具调用和共享服务账号场景的归因准确性，以及是否能覆盖跨账户或跨组织边界。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">

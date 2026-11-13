@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="High-priority signal: enterprise AI is moving from pilots to platformized deployment, and the next round of competition will focus on agent infrastructure, evaluation benchmarks, permission governance, and cost that can be falsified. If you are building platforms, cloud services, developer tools, or industry applications, prioritize &#x27;quantifiable ROI + auditable agents&#x27; rather than isolated demos.">
-  <title>KANE AI Newspaper - 2026-11-12</title>
+  <meta name="description" content="The enterprise signal is very consistent: AI is shifting from “usable” to “manageable, measurable, orchestrable, and portable.” AWS-related items run almost through cost attribution, access control, Managed Knowledge Base, AgentCore, A2A, multi-agent systems, and deployment isolation; GitHub Copilot continues to connect new models with enterprise repository workflows.">
+  <title>KANE AI Newspaper - 2026-11-13</title>
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="alternate" hreflang="zh" href="../index.html">
   <script defer src="../assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-12</p>
+          <p class="issue-label">2026-11-13</p>
           <h1>Morning AI Briefing</h1>
           <p class="field-label">Key assessment</p>
-          <blockquote>This issue is not a story about &#x27;more powerful models,&#x27; but about how models are organized into governable systems.</blockquote>
+          <blockquote>The core of this section is not a single model breakthrough, but infrastructureization and governance.</blockquote>
         </div>
-        <p class="edition-meta"><span>Published</span><strong>15:50</strong></p>
+        <p class="edition-meta"><span>Published</span><strong>15:31</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">Today&#x27;s context</h2>
-      <p>Enterprise AI agent infrastructure and governance standardization are becoming the clear main theme; nearly all high-priority items revolve around Amazon Bedrock, AgentCore, Agent Registry, MCP, evaluation, cost control, permissions, and multi-agent orchestration.</p>
+      <p>Engineering governance and cost control for AI systems</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -43,16 +43,16 @@
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/" rel="noopener noreferrer">Build composable, interoperable multi-agent systems with A2A on AWS</a></h3>
-            <p class="story-summary">The article shows how to build a composable, interoperable multi-agent system on AWS using the Agent-to-Agent (A2A) protocol: a LangChain orchestrator on Amazon ECS communicates with a Strands agent on Amazon Bedrock AgentCore via bidirectional, OAuth-authenticated calls, with neither side depending on the other’s framework or SDK.</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore</a></h3>
+            <p class="story-summary">Natera built an agentic AI system called SWARM on Amazon Bedrock AgentCore to host laboratory operations knowledge and deploy at scale, claiming it can improve first-response time by about 130x and achieve 96.2% automated coverage of support tickets.</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/" rel="noopener noreferrer">Run agents securely and efficiently with the next generation AgentCore runtime</a></h3>
-            <p class="story-summary">The new-generation Amazon Bedrock AgentCore runtime is designed for long-running, multi-step AI agents, offering hardware-isolated sessions, faster startup, higher compute, pay-as-you-go billing, and expanded isolation down to the data layer.</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/" rel="noopener noreferrer">Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</a></h3>
+            <p class="story-summary">Amazon Bedrock provides zero-instrumentation cost attribution, allowing each inference call to be traced back to the IAM principal that initiated the request; this content shows how to combine IAM Identity Center, session tags, and CUR 2.0 to attribute usage by user and enforce usage limits.</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
@@ -60,7 +60,7 @@
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">Recommended actions</h2>
-      <div class="action-list"><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Key verification points: whether A2A will achieve broad ecosystem adoption later, or is just a wrapper layer for AWS’s internal orchestration approach.</p></article><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Key verification points: whether it becomes the de facto standard for enterprise agent workloads, and whether the market accepts the trade-offs among performance, isolation, and cost.</p></article></div>
+      <div class="action-list"><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Verification focus: verify whether these improvements hold up in more complex tickets, exception flows, and long-running operations, and their real impact on manual review costs.</p></article><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Verification focus: assess the accuracy of its attribution across complex agent chains, multi-tool calls, and shared service account scenarios, and whether it can cover cross-account or cross-organization boundaries.</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
