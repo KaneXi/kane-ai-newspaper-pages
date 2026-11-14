@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="企业侧信号非常一致：AI 正从“能用”转向“可管、可算账、可编排、可迁移”。AWS 相关条目几乎贯穿成本归因、权限控制、Managed Knowledge Base、AgentCore、A2A、多代理和部署隔离；GitHub Copilot 则继续把新模型与企业仓库工作流打通。">
-  <title>KANE AI Newspaper - 2026-11-13</title>
+  <meta name="description" content="管理层应优先关注 AI 的单位任务成本、权限与账单归因、以及生产环境中的反馈闭环，而不是只看模型名气。采购和落地的胜负手正在从“谁的模型更强”变成“谁能在合规与成本约束下稳定交付”。">
+  <title>KANE AI Newspaper - 2026-11-14</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-13</p>
+          <p class="issue-label">2026-11-14</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这一版面的核心不是单一模型突破，而是基础设施化和治理化。</blockquote>
+          <blockquote>这组条目说明市场重心在下沉：企业采购和开发者采用的关键不再是单点模型指标，而是端到端交付、成本归因、权限边界、数据闭环和多模型调度。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>15:31</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>13:44</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>AI 系统的工程化治理与成本控制</p>
+      <p>AI 正从“能用模型”转向“可控、可计费、可路由、可生产化”的系统工程，核心关注点是 agent 任务成本、企业治理和生产推理流水线。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -43,24 +43,32 @@
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore</a></h3>
-            <p class="story-summary">Natera 基于 Amazon Bedrock AgentCore 构建了名为 SWARM 的 agentic AI 系统，用于承载实验室运营知识并规模化部署，宣称可将首次响应时间提升约 130 倍，并实现 96.2% 的支持工单自动覆盖。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/" rel="noopener noreferrer">Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</a></h3>
+            <p class="story-summary">Amazon Bedrock 提供零额外仪表化的成本归因能力，可将每次推理调用追溯到发起请求的 IAM principal；文章还展示了用 IAM Identity Center、session tags 和 CUR 2.0 为 AI 开发与生产力工具分配人均成本，并实施按用户使用限制。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/" rel="noopener noreferrer">Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</a></h3>
-            <p class="story-summary">Amazon Bedrock 提供零侵入的成本归因能力，可将每次推理调用追溯到发起请求的 IAM principal；该内容展示了如何结合 IAM Identity Center、session tags 和 CUR 2.0 按用户归因并施加使用上限。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture/" rel="noopener noreferrer">Build a model improvement flywheel with Amazon SageMaker HyperPod Data Capture</a></h3>
+            <p class="story-summary">Amazon SageMaker HyperPod Data Capture 可记录线上推理输入输出到 Amazon S3；示例展示了捕获支持路由器的生产流量、用 Athena 发现新产品盲区、再用 HyperPod training operator 基于捕获数据微调，并比较前后效果提升。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Watch / AI Tools</p>
+            <h3><a href="https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot" rel="noopener noreferrer">Gemini 4 Hydrogen in GitHub Copilot</a></h3>
+            <p class="story-summary">Gemini 4 Hydrogen 作为 Google 的最新 Flash 模型，已在 GitHub Copilot 中 GA，上线重点是快速、高效的 agentic coding、tool use 和多步工作流，并强调改进的 instruction 跟随能力。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应重点验证这些提升是否在更复杂工单、异常流程和长期运行中保持，及其对人工复核成本的真实影响。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其对复杂代理链路、多工具调用和共享服务账号场景的归因准确性，以及是否能覆盖跨账户或跨组织边界。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该能力是否被更多企业用来实施配额、部门摊销和异常用量告警，以及是否扩展到更多 AI 服务。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：后续要看该闭环在更多业务中能否降低人工标注成本，并提升上线后的稳定改进速度。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">

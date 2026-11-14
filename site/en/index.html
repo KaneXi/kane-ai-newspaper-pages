@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="The enterprise signal is very consistent: AI is shifting from “usable” to “manageable, measurable, orchestrable, and portable.” AWS-related items run almost through cost attribution, access control, Managed Knowledge Base, AgentCore, A2A, multi-agent systems, and deployment isolation; GitHub Copilot continues to connect new models with enterprise repository workflows.">
-  <title>KANE AI Newspaper - 2026-11-13</title>
+  <meta name="description" content="Management should prioritize AI unit task costs, permission and billing attribution, and feedback loops in production environments, rather than focusing only on model reputation. The deciding factor in procurement and deployment is shifting from “whose model is stronger” to “who can deliver reliably under compliance and cost constraints.”">
+  <title>KANE AI Newspaper - 2026-11-14</title>
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="alternate" hreflang="zh" href="../index.html">
   <script defer src="../assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-13</p>
+          <p class="issue-label">2026-11-14</p>
           <h1>Morning AI Briefing</h1>
           <p class="field-label">Key assessment</p>
-          <blockquote>The core of this section is not a single model breakthrough, but infrastructureization and governance.</blockquote>
+          <blockquote>These items show that the market focus is moving downward: for enterprise procurement and developer adoption, the key is no longer standalone model metrics, but end-to-end delivery, cost attribution, permission boundaries, data feedback loops, and multi-model scheduling.</blockquote>
         </div>
-        <p class="edition-meta"><span>Published</span><strong>15:31</strong></p>
+        <p class="edition-meta"><span>Published</span><strong>13:44</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">Today&#x27;s context</h2>
-      <p>Engineering governance and cost control for AI systems</p>
+      <p>AI is shifting from “usable models” to system engineering that is controllable, billable, routable, and production-ready, with the core focus on agent task costs, enterprise governance, and production inference pipelines.</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -43,24 +43,32 @@
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore</a></h3>
-            <p class="story-summary">Natera built an agentic AI system called SWARM on Amazon Bedrock AgentCore to host laboratory operations knowledge and deploy at scale, claiming it can improve first-response time by about 130x and achieve 96.2% automated coverage of support tickets.</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/" rel="noopener noreferrer">Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</a></h3>
+            <p class="story-summary">Amazon Bedrock provides cost attribution with zero extra instrumentation, allowing each inference call to be traced back to the IAM principal that initiated the request; the article also shows how to use IAM Identity Center, session tags, and CUR 2.0 to allocate per-user costs for AI development and productivity tools, and to enforce per-user usage limits.</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/" rel="noopener noreferrer">Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock</a></h3>
-            <p class="story-summary">Amazon Bedrock provides zero-instrumentation cost attribution, allowing each inference call to be traced back to the IAM principal that initiated the request; this content shows how to combine IAM Identity Center, session tags, and CUR 2.0 to attribute usage by user and enforce usage limits.</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture/" rel="noopener noreferrer">Build a model improvement flywheel with Amazon SageMaker HyperPod Data Capture</a></h3>
+            <p class="story-summary">Amazon SageMaker HyperPod Data Capture can record online inference inputs and outputs to Amazon S3; the example shows capturing production traffic for a router, using Athena to find blind spots for new products, then fine-tuning with the HyperPod training operator based on the captured data, and comparing the performance improvement before and after.</p>
             <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Watch / AI Tools</p>
+            <h3><a href="https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot" rel="noopener noreferrer">Gemini 4 Hydrogen in GitHub Copilot</a></h3>
+            <p class="story-summary">Gemini 4 Hydrogen, Google’s latest Flash model, is now GA in GitHub Copilot, with a focus on fast, efficient agentic coding, tool use, and multi-step workflows, and with improved instruction-following ability.</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">Recommended actions</h2>
-      <div class="action-list"><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Verification focus: verify whether these improvements hold up in more complex tickets, exception flows, and long-running operations, and their real impact on manual review costs.</p></article><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Verification focus: assess the accuracy of its attribution across complex agent chains, multi-tool calls, and shared service account scenarios, and whether it can cover cross-account or cross-organization boundaries.</p></article></div>
+      <div class="action-list"><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Validation focus: whether this capability will be used by more enterprises to implement quotas, departmental cost allocation, and anomaly usage alerts, and whether it will expand to more AI services.</p></article><article class="action"><strong>Test first</strong><p>Test in an isolated environment. Validation focus: later, check whether this closed loop can reduce manual labeling costs in more businesses and improve the speed of stable post-launch improvements.</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
