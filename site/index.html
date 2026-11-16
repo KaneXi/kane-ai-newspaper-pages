@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="本期未发现符合筛选条件且具有战略意义的 AI 更新。">
-  <title>KANE AI Newspaper - 2026-11-15</title>
+  <meta name="description" content="本期信号集中在两条主线：一是 enterprise AI 正在围绕 Amazon Bedrock/AgentCore 快速产品化，重点落在 memory、multi-agent、tenant isolation、prompt caching、legacy modernization 等可落地能力；二是 OpenAI 与 GitHub 相关更新显示模型与工具层仍在高频迭代，但更多体现为产品分发、行业合作与安全评估，而非单一模型参数突破。整体温度偏向加速，但议题较分散，且大量内容来自同一云平台生态的应用案例，说明市场正在从“demo”转向“运营化”和“集成化”。">
+  <title>KANE AI Newspaper - 2026-11-16</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,27 +24,51 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-15</p>
+          <p class="issue-label">2026-11-16</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>维持观察，不根据空样本推断市场方向。</blockquote>
+          <blockquote>这期不是单一“模型大跃进”，而是 AI 基础设施和企业工作流的整合加速周。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>14:22</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>17:54</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>有效样本不足</p>
+      <p>Agentic AI 的企业落地工程化：memory、MCP tools、multi-agent 架构、合规隔离、成本优化与旧系统现代化。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
       <h2 id="updates-title">重要更新</h2>
-      <p class="empty-state">本期没有发现符合筛选标准的重大 AI 更新。</p>
+      <div class="updates-grid">
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / AI Models</p>
+            <h3><a href="https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare" rel="noopener noreferrer">More ways to move care forward with ChatGPT for Healthcare</a></h3>
+            <p class="story-summary">ChatGPT for Healthcare 引入 computer-use agents、改进 clinical answers，并新增可跨 healthcare software 工作的 plugins，以帮助完成实际工作。</p>
+            <p class="source-line">OpenAI News</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base/" rel="noopener noreferrer">Build memory-aware AI agents with Agentic Retrieve on Amazon Bedrock Managed Knowledge Base</a></h3>
+            <p class="story-summary">Amazon Bedrock Managed Knowledge Base 与 Bedrock AgentCore memory 支持保存对话、抽取事实，并在单次 AgenticRetrieveStream 调用中提供长期记忆；示例强调多用户助手的文档权限隔离与记忆私有性。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Duco transforms financial data automation with Amazon Bedrock AgentCore</a></h3>
+            <p class="story-summary">Duco 将其 agentic AI stack 重建在 Amazon Bedrock 和 AgentCore 上，采用严格的 per-tenant isolation、多模型策略和 MCP skills 架构，宣称将 reconciliation 部署时间缩短 10 倍、上手成本降低 70%。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <p class="empty-state">本期没有需要立即执行的行动，继续观察即可。</p>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点观察插件生态、权限控制、临床安全性与实际采用速度。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该能力是否从示例扩展到更多行业模板，以及 memory 与检索、权限系统的边界如何标准化。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
