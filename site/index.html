@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="本期信号集中在两条主线：一是 enterprise AI 正在围绕 Amazon Bedrock/AgentCore 快速产品化，重点落在 memory、multi-agent、tenant isolation、prompt caching、legacy modernization 等可落地能力；二是 OpenAI 与 GitHub 相关更新显示模型与工具层仍在高频迭代，但更多体现为产品分发、行业合作与安全评估，而非单一模型参数突破。整体温度偏向加速，但议题较分散，且大量内容来自同一云平台生态的应用案例，说明市场正在从“demo”转向“运营化”和“集成化”。">
-  <title>KANE AI Newspaper - 2026-11-16</title>
+  <meta name="description" content="对企业而言，最强信号不是单一模型刷新，而是代理系统的基础设施化：身份、权限、审计、记忆、评测、知识库、路由与成本控制正在成为标配能力。对研发团队而言，值得立即关注的是可验证奖励、工具供应方绑定、VLM 跨图比较、时间污染、以及高精度但可审计的训练/推理工程，这些问题正从学术讨论变成生产风险。">
+  <title>KANE AI Newspaper - 2026-11-17</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-16</p>
+          <p class="issue-label">2026-11-17</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这期不是单一“模型大跃进”，而是 AI 基础设施和企业工作流的整合加速周。</blockquote>
+          <blockquote>市场正在经历从“模型即产品”向“模型只是执行层”的迁移。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>17:54</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>16:48</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>Agentic AI 的企业落地工程化：memory、MCP tools、multi-agent 架构、合规隔离、成本优化与旧系统现代化。</p>
+      <p>Agentic AI 的企业化：围绕模型的治理、审计、评测、记忆与成本控制正在成为主战场。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,33 +42,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / AI Models</p>
-            <h3><a href="https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare" rel="noopener noreferrer">More ways to move care forward with ChatGPT for Healthcare</a></h3>
-            <p class="story-summary">ChatGPT for Healthcare 引入 computer-use agents、改进 clinical answers，并新增可跨 healthcare software 工作的 plugins，以帮助完成实际工作。</p>
-            <p class="source-line">OpenAI News</p>
+            <p class="story-label">Test / AI Tools</p>
+            <h3><a href="https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365" rel="noopener noreferrer">Monitor GitHub Copilot activity through Microsoft Agent 365</a></h3>
+            <p class="story-summary">GitHub Copilot 的 agent 活动可流式进入 Microsoft Agent 365，便于企业在统一控制平面中查看审计数据。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base/" rel="noopener noreferrer">Build memory-aware AI agents with Agentic Retrieve on Amazon Bedrock Managed Knowledge Base</a></h3>
-            <p class="story-summary">Amazon Bedrock Managed Knowledge Base 与 Bedrock AgentCore memory 支持保存对话、抽取事实，并在单次 AgenticRetrieveStream 调用中提供长期记忆；示例强调多用户助手的文档权限隔离与记忆私有性。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Test / Open Source AI</p>
+            <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.34.0" rel="noopener noreferrer">vLLM v0.34.0</a></h3>
+            <p class="story-summary">vLLM 新版本带来多模型支持、默认启用可扩展 KV cache、模型运行时整合、Blackwell/MI355X 加速，以及多项破坏性变更。</p>
+            <p class="source-line">vLLM Releases</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore/" rel="noopener noreferrer">How Duco transforms financial data automation with Amazon Bedrock AgentCore</a></h3>
-            <p class="story-summary">Duco 将其 agentic AI stack 重建在 Amazon Bedrock 和 AgentCore 上，采用严格的 per-tenant isolation、多模型策略和 MCP skills 架构，宣称将 reconciliation 部署时间缩短 10 倍、上手成本降低 70%。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
+            <p class="story-label">Watch / AI Tools</p>
+            <h3><a href="https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available" rel="noopener noreferrer">OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available</a></h3>
+            <p class="story-summary">GitHub Copilot 中上线 GPT-6.2 Astra 与 GPT-6.2 Sol，面向 agentic coding 与 code review，强调更强的 coding judgment。</p>
+            <p class="source-line">GitHub Copilot Changelog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点观察插件生态、权限控制、临床安全性与实际采用速度。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该能力是否从示例扩展到更多行业模板，以及 memory 与检索、权限系统的边界如何标准化。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：后续要看该审计流是否能覆盖更多客户端与更多事件类型，并形成企业合规标准做法。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点关注升级兼容性、不同硬件上的收益，以及新默认值对吞吐和稳定性的实际影响。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
