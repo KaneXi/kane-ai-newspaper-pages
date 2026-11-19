@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="对企业而言，最强信号不是单一模型刷新，而是代理系统的基础设施化：身份、权限、审计、记忆、评测、知识库、路由与成本控制正在成为标配能力。对研发团队而言，值得立即关注的是可验证奖励、工具供应方绑定、VLM 跨图比较、时间污染、以及高精度但可审计的训练/推理工程，这些问题正从学术讨论变成生产风险。">
-  <title>KANE AI Newspaper - 2026-11-17</title>
+  <meta name="description" content="本期信号高度集中在三条主线：一是企业级 AI 基础设施继续向“可控、可观测、可治理”演进，AWS 与 GitHub 都在围绕模型选择、路由、审计、身份与成本控制补齐生产化能力；二是 coding agents 与 Copilot 生态继续扩张，工具侧更新明显快于模型侧，反映出企业更愿意先买可用工作流而非单点模型突破；三是研究侧围绕 post-training、RAG/agents 安全、可解释性与评估偏差的论文密集出现，说明行业已从“能不能做”转向“如何稳定、可验证、可迁移地做”。整体版面呈现加速但分化的市场温度：落地信号强，通用模型叙事相对集中，而真正决定采购与部署的是治理、成本、吞吐和集成。">
+  <title>KANE AI Newspaper - 2026-11-18</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-17</p>
+          <p class="issue-label">2026-11-18</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>市场正在经历从“模型即产品”向“模型只是执行层”的迁移。</blockquote>
+          <blockquote>这组新闻更像是“AI 生产系统化”的连续推进，而不是新一轮基础模型大跳跃。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>16:48</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>19:48</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>Agentic AI 的企业化：围绕模型的治理、审计、评测、记忆与成本控制正在成为主战场。</p>
+      <p>企业级 AI 生产化：围绕 agent、Copilot、推理效率、治理与安全的基础设施竞赛。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,33 +42,33 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / AI Tools</p>
-            <h3><a href="https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365" rel="noopener noreferrer">Monitor GitHub Copilot activity through Microsoft Agent 365</a></h3>
-            <p class="story-summary">GitHub Copilot 的 agent 活动可流式进入 Microsoft Agent 365，便于企业在统一控制平面中查看审计数据。</p>
-            <p class="source-line">GitHub Copilot Changelog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
             <p class="story-label">Test / Open Source AI</p>
             <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.34.0" rel="noopener noreferrer">vLLM v0.34.0</a></h3>
-            <p class="story-summary">vLLM 新版本带来多模型支持、默认启用可扩展 KV cache、模型运行时整合、Blackwell/MI355X 加速，以及多项破坏性变更。</p>
+            <p class="story-summary">vLLM v0.34.0 带来 10 个新模型、默认启用 extensible KV cache、移除 Model Runner V1，并在 Blackwell 和 MI355X 上给出显著速度提升，同时包含多项破坏性变更。</p>
             <p class="source-line">vLLM Releases</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Watch / AI Tools</p>
-            <h3><a href="https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available" rel="noopener noreferrer">OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available</a></h3>
-            <p class="story-summary">GitHub Copilot 中上线 GPT-6.2 Astra 与 GPT-6.2 Sol，面向 agentic coding 与 code review，强调更强的 coding judgment。</p>
-            <p class="source-line">GitHub Copilot Changelog</p>
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference/" rel="noopener noreferrer">Managed NVIDIA Dynamo on Amazon SageMaker HyperPod Inference</a></h3>
+            <p class="story-summary">Amazon SageMaker HyperPod Inference 支持 NVIDIA Dynamo，用于分布式推理、多节点与解耦 serving、KV-aware routing 和自动故障恢复。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
+          </div>
+        </article>
+        <article class="update">
+          <div class="update-content">
+            <p class="story-label">Test / Enterprise AI</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/" rel="noopener noreferrer">Amazon SageMaker AI real-time endpoints now support KV cache aware routing</a></h3>
+            <p class="story-summary">Amazon SageMaker AI real-time endpoints 新增 KV cache aware routing，根据 prompt 的最长缓存匹配将请求路由到对应实例。</p>
+            <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：后续要看该审计流是否能覆盖更多客户端与更多事件类型，并形成企业合规标准做法。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点关注升级兼容性、不同硬件上的收益，以及新默认值对吞吐和稳定性的实际影响。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：重点跟踪升级后的稳定性、默认配置对不同模型/硬件的影响，以及生态是否快速适配 V2 runner 和新 block size。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其对高并发、多实例和超大模型 serving 成本的实际影响。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
