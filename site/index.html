@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="给管理层的信号是：AI 预算要从“模型能力采购”转向“系统运营能力采购”。优先级应放在审计、权限隔离、数据脱敏、推理成本控制、GPU 利用率、故障诊断和可复现评测上；对 agent 的上线门槛则应提高到可回放、可归因、可限制、可计费。">
-  <title>KANE AI Newspaper - 2026-11-20</title>
+  <meta name="description" content="对企业买方而言，短期应优先关注可直接降本增效的推理缓存、统一路由、文档自动结构化与 AI 风险治理能力；对团队而言，Agent 工具链与云厂商原生能力正在形成默认栈，适合测试和逐步替换碎片化自建方案。">
+  <title>KANE AI Newspaper - 2026-11-21</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-20</p>
+          <p class="issue-label">2026-11-21</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这期最重要的不是某个单独模型，而是 AI 系统正从“能做”进入“可控、可审计、可优化、可部署”的阶段。</blockquote>
+          <blockquote>本版面几乎完全由 AWS 面向企业 AI 基础设施、Agent 工作流、推理路由、文档抽取与训练可观测性组成，体现的是云厂商把生成式 AI 从“模型能力”推进到“可运营、可治理、可集成”的企业落地阶段；唯一的非 AWS 条目聚焦 OpenAI 的防护策略，说明模型侧竞争正在转向安全与能力保护。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>16:08</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>15:07</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>Agent 规模化后的治理、审计与效率优化</p>
+      <p>AWS 将生成式 AI 产品化为企业级工作流、推理与治理平台。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -42,25 +42,17 @@
       <div class="updates-grid">
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.26531v1" rel="noopener noreferrer">Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models</a></h3>
-            <p class="story-summary">该系统用 LLM agents + deterministic tools 对 fleet-scale ranking models 的特征进行成本感知优化，并已在生产模型和在线 A/B 测试中带来指标提升。</p>
-            <p class="source-line">arXiv AI Research</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/" rel="noopener noreferrer">How the BMW Group governs hundreds of agents across thousands of developers</a></h3>
-            <p class="story-summary">BMW Group 介绍了在数千开发者、数百 agent 规模下的治理实践，强调 AI agent 不能脱离治理体系独立扩张。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/" rel="noopener noreferrer">Announcing Amazon Textract Insights: Verifiable generative AI for documents</a></h3>
+            <p class="story-summary">Amazon Textract 的新功能 Textract Insights 已正式提供，支持用自然语言描述所需字段，输入单份文档或混合文档包后返回结构化结果，并为每个值提供置信度和页级 grounding，无需训练模型。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/" rel="noopener noreferrer">Amazon SageMaker Inference: 2026 launches in review, part 2</a></h3>
-            <p class="story-summary">Amazon SageMaker Inference 持续发布推理能力更新，覆盖配置建议、单卡容纳更多模型、超大模型跨实例服务、跨区域路由和上线后调优等，共计 26 项。</p>
+            <h3><a href="https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/" rel="noopener noreferrer">Cut self-hosted LLM cost and latency with the distributed KV caching agent skill</a></h3>
+            <p class="story-summary">AWS 介绍了适用于自托管 LLM 的分布式 KV caching agent skill，可利用 Amazon ElastiCache 缓解重复上下文计算，宣称可将推理成本最多降低 40%，首 token 时间最多缩短 80%。</p>
             <p class="source-line">AWS Machine Learning Blog</p>
           </div>
         </article></div>
@@ -68,7 +60,7 @@
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其是否能推广到其他大规模特征工程场景。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：是否形成可复用的企业 agent governance blueprint。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：在复杂版式、低质量扫描和跨文档包场景下的准确率，以及是否覆盖更多行业模板。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：实际性能是否在不同模型和负载下稳定成立，以及该能力是否被进一步产品化为默认托管组件。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
