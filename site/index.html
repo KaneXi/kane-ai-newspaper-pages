@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="管理层可读的结论是：AI 进入第二阶段，竞争重点从模型本身转向系统工程。优先级应放在三件事：一是让 agent/LLM 行为可验证；二是把推理与服务成本压下去；三是把安全、权限和版本治理嵌入运行时。">
-  <title>KANE AI Newspaper - 2026-11-24</title>
+  <meta name="description" content="给管理层的信号是：优先投资可节省推理成本、提升可验证性的系统层能力；把 agent 工作流拆成可审计子任务；为关键决策链增加判定、回放、对照和故障注入机制；同时密切关注量化、speculative decoding、记忆检索与机器人策略数据化，这些最可能在 6-12 个月内转化为可见 ROI。">
+  <title>KANE AI Newspaper - 2026-11-25</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="alternate" hreflang="en" href="en/index.html">
   <script defer src="assets/language.js"></script>
@@ -24,17 +24,17 @@
     <article class="edition-page">
       <header class="edition-hero">
         <div>
-          <p class="issue-label">2026-11-24</p>
+          <p class="issue-label">2026-11-25</p>
           <h1>早间 AI 情报</h1>
           <p class="field-label">核心判断</p>
-          <blockquote>这期不是单纯的模型能力跃迁，而是“能力 - 部署 - 验证”三线并进：模型侧有若干高影响研究，但更大的信号来自工程化基础设施、可信执行、供应链安全和运行时优化。</blockquote>
+          <blockquote>版面整体呈现出一个清晰趋势：AI 正从“更强模型”转向“更强系统”。</blockquote>
         </div>
-        <p class="edition-meta"><span>发布时间</span><strong>18:02</strong></p>
+        <p class="edition-meta"><span>发布时间</span><strong>17:35</strong></p>
       </header>
       
     <aside class="landscape" aria-labelledby="landscape-title">
       <h2 id="landscape-title">今日脉络</h2>
-      <p>可验证的 agent 工程化：性能优化、运行时安全、置信度校准、接口设计与在线演进。</p>
+      <p>AI 系统工程化：降本、验证、审计、可复用训练数据与跨模态执行。</p>
     </aside>
       
     <section class="section updates" id="updates" aria-labelledby="updates-title">
@@ -43,32 +43,24 @@
         <article class="update">
           <div class="update-content">
             <p class="story-label">Test / Research Papers</p>
-            <h3><a href="https://arxiv.org/abs/2611.31129v1" rel="noopener noreferrer">FATCAT: Fault Injection Attacks Targeting Chip-level Alignment</a></h3>
-            <p class="story-summary">FATCAT 展示了针对现代 foundation model 的物理故障注入攻击，可通过非侵入式电磁手段在硬件层面破坏拒绝机制，让模型执行受限请求，并影响机器人动作。</p>
+            <h3><a href="https://arxiv.org/abs/2611.33148v1" rel="noopener noreferrer">CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies</a></h3>
+            <p class="story-summary">CoT-Proxy 研究长程策略蒸馏：发现从强教师的 action 轨迹、甚至不暴露 chain-of-thought 也能有效蒸馏 long-horizon policy；再配合 CoT-proxies，可把闭源模型的可见输出转化为可迁移训练信号。</p>
             <p class="source-line">arXiv AI Research</p>
           </div>
         </article>
         <article class="update">
           <div class="update-content">
-            <p class="story-label">Test / Enterprise AI</p>
-            <h3><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/" rel="noopener noreferrer">Introducing the Amazon Bedrock Trusted Access API, with Enterprise Frontier Safeguards and Enterprise Data Controls for Claude models</a></h3>
-            <p class="story-summary">Amazon Bedrock 推出 Trusted Access API，用于统一发现、申请和加入模型提供方的企业程序；首批公开预览包括 Anthropic 的 Enterprise Frontier Safeguards 和 Enterprise Data Controls，强调对 Claude 模型使用时的数据控制。</p>
-            <p class="source-line">AWS Machine Learning Blog</p>
-          </div>
-        </article>
-        <article class="update">
-          <div class="update-content">
-            <p class="story-label">Watch / AI Models</p>
-            <h3><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities" rel="noopener noreferrer">GPT-6 models demonstrate intrinsic protein-design capabilities</a></h3>
-            <p class="story-summary">该条称 GPT-6 模型展现出内在蛋白设计能力，能够结合推理与代码生成蛋白结构和序列；实验在五个靶点上观察到结合证据。</p>
-            <p class="source-line">OpenAI News</p>
+            <p class="story-label">Test / Research Papers</p>
+            <h3><a href="https://arxiv.org/abs/2611.33098v1" rel="noopener noreferrer">Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance</a></h3>
+            <p class="story-summary">Delegent 提出一种多 agent harness：frontier 模型负责主线任务，把搜索、测试、代码检查等容易子任务委派给本地可运行的 SLM subagents，从而显著降低长程 coding 与 agentic search 的 frontier 成本。</p>
+            <p class="source-line">arXiv AI Research</p>
           </div>
         </article></div>
     </section>
       
     <section class="section actions" aria-labelledby="actions-title">
       <h2 id="actions-title">行动建议</h2>
-      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：应高度关注防护、检测和硬件容错措施，以及该攻击在更多设备和模型上的可复现性。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：这些控制项是否扩展到更多模型供应商、是否支持更细粒度审计，以及是否影响企业采购和合规流程。</p></article></div>
+      <div class="action-list"><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：其在更多长程 agent 任务上的稳定性，以及对不同教师模型和任务格式的普适性。</p></article><article class="action"><strong>优先测试</strong><p>在隔离环境测试。验证重点：该范式在更多 agent 工作流中的稳定性，以及对子任务切分策略的依赖程度。</p></article></div>
     </section>
     </article></main>
   <footer class="site-footer">
